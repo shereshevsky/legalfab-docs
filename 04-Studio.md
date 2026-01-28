@@ -82,8 +82,6 @@ The Studio serves as the development environment for the LegalFab platform, enab
 ## Text-to-Pipeline Generation
 
 The Text-to-Pipeline feature enables users to create workflows using natural language descriptions. The system generates a Domain Specific Language (DSL) representation that can be visualized, refined, and executed.
-
-![Text-to-Pipeline](./images/Pasted%20image%2020260128180222.png)
 ### Generation Flow
 
 ```
