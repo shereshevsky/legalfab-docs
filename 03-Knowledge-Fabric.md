@@ -1,4 +1,4 @@
-# LegalFab Knowledge Fabric Security
+# LegalFab Knowledge Fabric
 
 **Version:** 1.6
 **Last Updated:** January 2026
@@ -70,13 +70,13 @@ The Knowledge Fabric serves as the foundational data integration and intelligenc
 │                [Customer-Managed, Customer Credentials]                 │
 └─────────────────────────────────────────────────────────────────────────┘
 ```
-![[Pasted image 20260128180037.png]]
+![Architecture Overview](./images/Pasted%20image%2020260128180037.png)
 ---
 
 ## Knowledge Graph
 
 The Knowledge Graph serves as the foundation for entity management, relationship tracking, and data integration across the LegalFab platform.
-![[Pasted image 20260128180119.png]]
+![Knowledge Graph](./images/Pasted%20image%2020260128180119.png)
 ### Graph Architecture
 
 ```
@@ -286,7 +286,7 @@ For detailed schema management, see [09-Schema-Management](09-Schema-Management.
 
 The Knowledge Fabric maintains live connections to customer source systems, keeping the graph synchronized with operational data.
 
-![[Pasted image 20260128180258.png]]
+![External Source Integration](./images/Pasted%20image%2020260128180258.png)
 ### Connection Architecture
 
 ```
@@ -358,7 +358,7 @@ The Knowledge Fabric maintains live connections to customer source systems, keep
 ## Two-Way Data Flow
 
 The Knowledge Fabric operates as a bidirectional system, enabling both read access and write-back to source systems while maintaining data governance and audit requirements.
-![[Pasted image 20260128180608.png]]
+![Customer System Connections](./images/Pasted%20image%2020260128180608.png)
 ### Data Flow Architecture
 
 ```
@@ -563,7 +563,7 @@ For detailed schema management, see [09-Schema-Management](09-Schema-Management.
 ## Discovery Service
 
 The Discovery Service automatically identifies and catalogs data assets across connected sources.
-![[Pasted image 20260128180801.png]]
+![Connectivity](./images/Pasted%20image%2020260128180801.png)
 ### Discovery Components
 
 | Component        | Function                           | Security Controls                   |
@@ -641,7 +641,7 @@ The Active Metadata system provides continuous metadata analysis, enrichment, an
 | Propagation | Classifications propagate through lineage |
 
 ### Lineage Tracking
-![[Pasted image 20260128180815.png]]
+![Discovery Service](./images/Pasted%20image%2020260128180815.png)
 
 | Lineage Type | Description | Security Use |
 |:-------------|:------------|:-------------|
@@ -778,7 +778,7 @@ The Session Graph builds cumulatively across queries, providing context-aware ex
 ## Data Observability
 
 The Knowledge Fabric integrates data observability capabilities to monitor data health, quality, and pipeline performance.
-![[Pasted image 20260128180925.png]]
+![Active Metadata](./images/Pasted%20image%2020260128180925.png)
 ### Observability Integration
 
 | Capability | Description | Purpose |
@@ -911,7 +911,7 @@ The Monitoring system provides comprehensive observability across the Knowledge 
 
 ## Authentication and Access Control
 
-![[Pasted image 20260128181119.png]]
+![Search Sessions](./images/Pasted%20image%2020260128181119.png)
 
 ### Authentication Mechanisms
 

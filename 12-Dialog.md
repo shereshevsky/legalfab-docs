@@ -1,4 +1,4 @@
-# LegalFab Dialog Security
+# LegalFab Dialog
 
 **Version:** 1.0
 **Last Updated:** January 2026

@@ -1,4 +1,4 @@
-# LegalFab CI/CD Security
+# LegalFab CI/CD
 
 **Version:** 1.0
 **Last Updated:** January 2026

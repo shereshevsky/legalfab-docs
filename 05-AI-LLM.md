@@ -1,4 +1,4 @@
-# LegalFab AI & LLM Security
+# LegalFab AI & LLM
 
 **Version:** 1.1
 **Last Updated:** January 2026

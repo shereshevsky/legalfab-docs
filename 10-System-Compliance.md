@@ -25,7 +25,7 @@ LegalFab maintains compliance with applicable regulations and industry standards
 ---
 
 ## Data Protection
-![[Pasted image 20260128181420.png]]
+![Data Protection](./images/Pasted%20image%2020260128181420.png)
 ### GDPR Compliance
 
 | Requirement | Implementation |
@@ -256,7 +256,7 @@ Policies trigger based on metadata tags without requiring changes to source syst
 ---
 
 ## Compliance Reporting
-![[Pasted image 20260128181447.png]]
+![Industry Standards](./images/Pasted%20image%2020260128181447.png)
 ### Available Reports
 
 | Report | Content | Frequency |

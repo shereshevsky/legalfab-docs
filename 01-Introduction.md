@@ -1,4 +1,4 @@
-# LegalFab Platform - Security Documentation
+# LegalFab Platform - Documentation
 
 **Version:** 1.2
 **Last Updated:** January 2026

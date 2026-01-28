@@ -1,4 +1,4 @@
-# LegalFab AML Compliance Security
+# LegalFab AML Compliance
 
 **Version:** 1.0
 **Last Updated:** January 2026
@@ -115,7 +115,7 @@ The Entity Resolution Engine identifies duplicate and related records across cus
 
 ## Rule Engine
 
-![[Pasted image 20260128181311.png]]
+![Rule Engine](./images/Pasted%20image%2020260128181311.png)
 The Rule Engine enables administrators to define, version, and execute business rules for risk assessment, compliance decisions, and workflow routing.
 
 ### Rule Engine Architecture
@@ -235,7 +235,7 @@ Risk scoring rules calculate numeric scores based on configurable factors and we
 
 ## BPM Workflows
 
-![[Pasted image 20260128181324.png]]
+![BPM Workflows](./images/Pasted%20image%2020260128181324.png)
 
 The BPM (Business Process Management) system orchestrates multi-step compliance processes with human tasks, automated actions, and regulatory controls.
 

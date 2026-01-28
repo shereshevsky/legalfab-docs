@@ -1,4 +1,4 @@
-# LegalFab Studio Security
+# LegalFab Studio
 
 **Version:** 1.5
 **Last Updated:** January 2026
@@ -7,7 +7,7 @@
 
 ## Component Overview
 
-![[Pasted image 20260128181139.png]]
+![Studio Overview](./images/Pasted%20image%2020260128181139.png)
 The Studio serves as the development environment for the LegalFab platform, enabling users to build AI agents, design workflows, and orchestrate multi-agent solutions for legal use cases. The platform supports five operational modes that enable organizations to balance automation with human oversight, tailored to their policies and use cases.
 
 **Core Capabilities:**
@@ -83,7 +83,7 @@ The Studio serves as the development environment for the LegalFab platform, enab
 
 The Text-to-Pipeline feature enables users to create workflows using natural language descriptions. The system generates a Domain Specific Language (DSL) representation that can be visualized, refined, and executed.
 
-![[Pasted image 20260128180222.png]]
+![Text-to-Pipeline](./images/Pasted%20image%2020260128180222.png)
 ### Generation Flow
 
 ```
@@ -235,7 +235,7 @@ The generated pipeline is displayed visually before execution.
 The Studio enables users to define their business domain by providing documents, from which the system extracts relevant schemas. These schemas then control data processing across agents and pipelines.
 
 ### Document-to-Schema Extraction
-![[Pasted image 20260128181233.png]]
+![Document-to-Schema Extraction](./images/Pasted%20image%2020260128181233.png)
 Users upload business documents (policies, contracts, data dictionaries, forms) and the system extracts domain concepts to generate structured schemas.
 
 **Extraction Process:**
@@ -261,7 +261,7 @@ Users upload business documents (policies, contracts, data dictionaries, forms) 
 
 ### Schema-Driven Agents
 
-![[Pasted image 20260128181222.png]]
+![Schema-Driven Agents](./images/Pasted%20image%2020260128181222.png)
 Agents use bound schemas to control their data processing behavior.
 
 **Agent Schema Binding:**
