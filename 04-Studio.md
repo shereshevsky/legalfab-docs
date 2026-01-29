@@ -418,7 +418,7 @@ Agents are defined using a standardized schema that enables consistent execution
 │  Agent Request ──▶ [Tool Authorization] ──▶ [Parameter Validation]  │
 │                          │                       │                  │
 │                          ▼                       ▼                  │
-│               (Permission check)        (Input sanitization)        │
+│                         (Checks)        (Input sanitization)        │
 │                              │                                      │
 │                              ▼                                      │
 │                       [Audit Logging]                               │
@@ -427,25 +427,15 @@ Agents are defined using a standardized schema that enables consistent execution
 
 ### Execution Sandbox
 
-All agent execution occurs within isolated sandboxes with strict security controls.
+All agent execution occurs within isolated sandboxes.
 
 **Sandbox Features:**
 
-| Feature                 | Implementation             | Purpose                   |
-| :---------------------- | :------------------------- | :------------------------ |
-| Process Isolation       | Container with gVisor      | Prevent host access       |
-| Network Isolation       | Network namespace          | Control external access   |
-| Filesystem Isolation    | Overlay FS, read-only root | Prevent persistence       |
-| Resource Limits         | cgroups v2                 | Enforce CPU/memory bounds |
-| Time Limits             | Process timeout            | Prevent runaway execution |
-
-**Sandbox Levels:**
-
-| Level | Use Case | Restrictions |
-|:------|:---------|:-------------|
-| Standard | Most agents | Network whitelist, resource limits |
-| Strict | Sensitive legal data | No network, minimal syscalls |
-| Isolated | Untrusted code | Full VM isolation |
+| Feature              | Implementation             | Purpose                   |
+| :------------------- | :------------------------- | :------------------------ |
+| Process Isolation    | Container with gVisor      | Prevent host access       |
+| Filesystem Isolation | Overlay FS, read-only root | Prevent persistence       |
+| Time Limits          | Process timeout            | Prevent runaway execution |
 
 **Resource Constraints:**
 
@@ -547,10 +537,10 @@ Datasets enable users to define, manage, and share structured data collections t
 │                                ▼                                        │
 │  ┌─────────────────────────────────────────────────────────────┐        │
 │  │                    DATA SOURCES                             │        │
-│  │  ┌─────────┐  ┌─────────┐  ┌─────────┐  ┌─────────┐         │        │
-│  │  │Knowledge│  │ External│  │ Uploaded│  │ API     │         │        │
-│  │  │ Fabric  │  │  APIs   │  │  Files  │  │ Feeds   │         │        │
-│  │  └─────────┘  └─────────┘  └─────────┘  └─────────┘         │        │
+│  │  ┌─────────┐               ┌─────────┐                      │        │
+│  │  │Knowledge│               │ Uploaded│                      │        │
+│  │  │ Fabric  │               │  Files  │                      │        │
+│  │  └─────────┘               └─────────┘                      │        │
 │  └─────────────────────────────────────────────────────────────┘        │
 │                                │                                        │
 │                                ▼                                        │
@@ -570,7 +560,7 @@ Datasets enable users to define, manage, and share structured data collections t
 | Static     | Fixed data loaded once                     | Reference data, lookup tables        |
 | Dynamic    | Real-time data from connected sources      | Live case data, entity updates       |
 | Aggregated | Computed summaries from multiple sources   | Analytics, reporting metrics         |
-| Filtered   | Subset of larger dataset based on criteria | Role-specific views, case subsets    |
+| Filtered   | Subset of larger dataset based on criteria | Case-specific subsets                |
 | Derived    | Transformed data from other datasets       | Calculated fields, enriched entities |
 
 ### Dataset Creation Flow
@@ -598,12 +588,11 @@ Datasets enable users to define, manage, and share structured data collections t
 
 ### Dataset Access Patterns
 
-| Pattern      | Description                           | Security                      |
-| :----------- | :------------------------------------ | :---------------------------- |
-| Direct Query | Agents query dataset directly         | Permission check per query    |
-| Subscription | Real-time updates pushed to consumers | Subscription authorization    |
-| Snapshot     | Point-in-time copy of dataset         | Immutable, audited access     |
-| Export       | Download dataset for external use     | Export approval, watermarking |
+| Pattern      | Description                       | Security                   |
+| :----------- | :-------------------------------- | :------------------------- |
+| Direct Query | Agents query dataset directly     | Permission check per query |
+| Subscription | Use real-time version of the data | Subscription authorization |
+| Snapshot     | Point-in-time copy of dataset     | Immutable, audited access  |
 
 ### Dataset Integration with Agents
 
@@ -621,12 +610,12 @@ Agents can only invoke tools explicitly authorized for the user and use case.
 
 ### Tool Categories
 
-| Category | Authorization Level | Approval Required |
-|:---------|:--------------------|:------------------|
-| Read-Only (Search, Query) | User permission | Automatic |
-| Data Modification | Explicit grant | Automatic with logging |
-| External API Calls | Per-API authorization | Risk-dependent |
-| Administrative Actions | Privileged access | Multi-party approval |
+| Category                  | Authorization Level   | Approval Required      |
+| :------------------------ | :-------------------- | :--------------------- |
+| Read-Only (Search, Query) | User permission       | Automatic              |
+| Data Modification         | Explicit grant        | Automatic with logging |
+| External API Calls        | Per-API authorization | Risk-dependent         |
+| Administrative Actions    | Privileged access     | Multi-party approval   |
 
 ### Tool Permission Model
 

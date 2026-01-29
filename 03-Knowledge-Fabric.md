@@ -360,40 +360,37 @@ The Knowledge Fabric maintains live connections to customer source systems, keep
 
 ---
 
-## Two-Way Data Flow
+## Data Flow
 
-The Knowledge Fabric operates as a bidirectional system, enabling both read access and write-back to source systems while maintaining data governance and audit requirements.
+The Knowledge Fabric enables access and source systems while maintaining data governance and audit requirements.
 ![Customer System Connections](./images/Pasted%20image%2020260128180608.png)
 ### Data Flow Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────────────────┐
-│                    TWO-WAY DATA FLOW                                │
+│                    DATA FLOW                                        │
 ├─────────────────────────────────────────────────────────────────────┤
 │                                                                     │
 │                    ┌─────────────────────┐                          │
 │                    │   KNOWLEDGE FABRIC  │                          │
-│                    │   (Unified View)    │                          │
+│                    │                     │                          │
 │                    └─────────┬───────────┘                          │
 │                              │                                      │
 │                    ┌─────────┴───────────┐                          │
 │                    │   MCP CONNECTORS    │                          │
-│                    │   (Bidirectional)   │                          │
+│                    │                     │                          │
 │                    └─────────┬───────────┘                          │
 │                              │                                      │
 │         ┌────────────────────┼────────────────────┐                 │
 │         │                    │                    │                 │
 │         ▼                    ▼                    ▼                 │
 │  ┌─────────────┐      ┌─────────────┐      ┌─────────────┐          │
-│  │    READ     │      │    READ     │      │    READ     │          │
 │  │  ─────────  │      │  ─────────  │      │  ─────────  │          │
 │  │   CRM       │      │  Document   │      │   Data      │          │
-│  │   WRITE     │      │  Mgmt       │      │   Lake      │          │
-│  │  ─────────  │      │  WRITE      │      │   WRITE     │          │
+│  │             │      │  Mgmt       │      │   Lake      │          │
+│  │  ─────────  │      │             │      │             │          │
 │  └─────────────┘      └─────────────┘      └─────────────┘          │
 │                                                                     │
-│         READ: Query, retrieve, enrich                               │
-│         WRITE: Update, create, enrich source data                   │
 └─────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -407,44 +404,17 @@ The Knowledge Fabric operates as a bidirectional system, enabling both read acce
 | Relationship Queries | Pull relationship data from existing graph databases   |
 | Real-Time Access     | Direct data access without ETL or replication          |
 
-### Write Operations (Data Updates)
-
-| Operation | Description |
-|:----------|:------------|
-| Record Updates | Update person/organization records at the source |
-| Data Enrichment | Enrich source data with investigation findings |
-| Entity Creation | Create new entities in authoritative systems |
-| Audit Logging | Log investigative actions to audit databases |
-| Relationship Write-back | Write discovered relationships to graph stores |
-
-### Write-Back Workflow
-
-When a user updates information through the Knowledge Fabric:
-
-| Step                  | Activities                                            | Security Controls           |
-| :-------------------- | :---------------------------------------------------- | :-------------------------- |
-| User Action           | User updates data in Knowledge Fabric interface       | Authentication verified     |
-| Source Identification | System identifies which source system owns the record | Authoritative source lookup |
-| Permission Check      | Verify user has write access to source system         | Role-based authorization    |
-| Format Validation     | Validate data meets source system requirements        | Schema validation           |
-| Policy Check          | Verify update allowed per governance policies         | Data governance rules       |
-| Write Execution       | MCP connector executes write to source system         | Encrypted transport         |
-| Source Response       | Source system applies its own validation              | Native validation           |
-| View Refresh          | Knowledge Fabric refreshes unified view               | Cache invalidation          |
-| Propagation           | Related systems see updated data via connectors       | Cross-system consistency    |
-| Audit Trail           | Complete logging of update chain                      | Immutable audit record      |
-
 ### Multi-System Coordination
 
 When an entity exists in multiple systems:
 
-| Control | Description |
-|:--------|:------------|
-| Primary Source Definition | Define authoritative source for each entity type |
-| Multi-Write Option | Optionally write to multiple systems |
-| Master Record Designation | Designate which system holds master record |
-| Conflict Resolution | Handle when same entity has different values across sources |
-| Cascade Control | Control whether updates cascade to related records |
+| Control                   | Description                                                 |
+| :------------------------ | :---------------------------------------------------------- |
+| Primary Source Definition | Define authoritative source for each entity type            |
+| Multi-Write Option        | Optionally write to multiple systems                        |
+| Master Record Designation | Designate which system holds master record                  |
+| Conflict Resolution       | Handle when same entity has different values across sources |
+| Cascade Control           | Control whether updates cascade to related records          |
 
 ### What Knowledge Fabric Stores vs. What Remains in Source Systems
 
@@ -657,12 +627,11 @@ The Active Metadata system provides continuous metadata analysis, enrichment, an
 
 **Lineage Security Controls:**
 
-| Control | Description |
-|:--------|:------------|
-| Immutable History | Lineage records cannot be modified |
-| Access Inheritance | Downstream inherits upstream restrictions |
-| Impact Analysis | Identify affected assets on changes |
-| Compliance Evidence | Lineage serves as audit evidence |
+| Control             | Description                               |
+| :------------------ | :---------------------------------------- |
+| Access Inheritance  | Downstream inherits upstream restrictions |
+| Impact Analysis     | Identify affected assets on changes       |
+| Compliance Evidence | Lineage serves as audit evidence          |
 
 ---
 
@@ -987,12 +956,12 @@ The Monitoring system provides comprehensive observability across the Knowledge 
 
 ### Data Masking
 
-| Technique | Use Case |
-|:----------|:---------|
-| Full Masking | Highly sensitive fields |
-| Partial Masking | Identification fields |
-| Format Preserving | Testing scenarios |
-| Tokenization | Cross-system correlation |
+| Technique         | Use Case                 |
+| :---------------- | :----------------------- |
+| Full Masking      | Highly sensitive fields  |
+| Partial Masking   | Identification fields    |
+| Format Preserving | Testing scenarios        |
+| Tokenization      | Cross-system correlation |
 
 ---
 

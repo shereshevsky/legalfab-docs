@@ -13,18 +13,18 @@ title: Security Operations
 ## Security Monitoring
 
 ### Security Operations Center (SOC)
-
+![Studio Overview](./images/soc_vulnerability.png)
 The SOC provides centralized monitoring and management of security operations.
 
 **Key Functions:**
 
-| Function | Description |
-|:---------|:------------|
-| Continuous Monitoring | 24/7 monitoring of security events |
-| Incident Detection | Automated detection and alerting |
-| Threat Intelligence | Gathering and analysis of threat data |
-| Incident Response | Coordinated response to security incidents |
-| Compliance Monitoring | Ongoing compliance verification |
+| Function              | Description                                |
+| :-------------------- | :----------------------------------------- |
+| Continuous Monitoring | 24/7 monitoring of security events         |
+| Incident Detection    | Automated detection and alerting           |
+| Threat Intelligence   | Gathering and analysis of threat data      |
+| Incident Response     | Coordinated response to security incidents |
+| Compliance Monitoring | Ongoing compliance verification            |
 
 ### Monitoring Coverage
 
@@ -70,7 +70,8 @@ The SOC provides centralized monitoring and management of security operations.
 ---
 
 ## Monitoring Infrastructure
-
+![Studio Overview](./images/monitoring.png)
+![Studio Overview](./images/monitoring-2.png)
 ### Metrics Collection
 
 | Component | Metrics |
@@ -101,7 +102,7 @@ The SOC provides centralized monitoring and management of security operations.
 ---
 
 ## Incident Response
-
+![Studio Overview](./images/soc_vulnerability.png)
 ### Incident Classification
 
 | Severity | Definition | Examples |

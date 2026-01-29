@@ -16,7 +16,7 @@ The AI & LLM Architecture provides the intelligence layer for the LegalFab platf
 
 **Key Security Characteristics:**
 
-- Multi-layer prompt injection defense
+- Prompt injection defense
 - Data isolation prevents cross-tenant information leakage
 - Secure API integration with LLM providers
 - Comprehensive content filtering and safety guardrails
@@ -176,15 +176,6 @@ When LLM models are updated, organizations need assurance that investigative con
 | Traffic Shifting | Gradual migration between versions |
 | State Preservation | No data loss during model transitions |
 
-### A/B Testing Framework
-
-| Capability | Description |
-|:-----------|:------------|
-| Traffic Splitting | Route percentage of requests to each model version |
-| Metric Comparison | Side-by-side performance analysis |
-| Statistical Significance | Automated determination of winner |
-| Audience Targeting | Test on specific user segments or use cases |
-
 ---
 
 ## LLM Provenance
@@ -193,22 +184,22 @@ When LLM models are updated, organizations need assurance that investigative con
 
 Every LLM invocation captures:
 
-| Data Point | Description | Retention |
-|:-----------|:------------|:----------|
-| Prompt Template | Exact prompt sent to model | 1 year |
-| Model Version | Specific model and parameters used | 1 year |
-| Retrieved Context | Documents/data provided to model | 1 year |
-| Complete Response | Full model output | 1 year |
-| Reasoning Chain | Logic from context to conclusion | 2 years |
-| Supporting Facts | Document references for conclusions | 2 years |
+| Data Point        | Description                         | Retention |
+| :---------------- | :---------------------------------- | :-------- |
+| Prompt Template   | Exact prompt sent to model          | 1 year    |
+| Model Version     | Specific model and parameters used  | 1 year    |
+| Retrieved Context | Documents/data provided to model    | 1 year    |
+| Complete Response | Full model output                   | 1 year    |
+| Reasoning Chain   | Logic from context to conclusion    | 2 years   |
+| Supporting Facts  | Document references for conclusions | 2 years   |
 
 ### Provenance Security
 
-| Control | Implementation |
-|:--------|:---------------|
-| Immutability | Provenance records cannot be modified |
-| Tamper Evidence | Cryptographic hash chain prevents alteration |
-| Cross-Reference | Links between related invocations preserved |
+| Control            | Implementation                                              |
+| :----------------- | :---------------------------------------------------------- |
+| Immutability       | Provenance records cannot be modified                       |
+| Tamper Evidence    | Cryptographic hash chain prevents alteration                |
+| Cross-Reference    | Links between related invocations preserved                 |
 | Version Comparison | Side-by-side analysis when model changes affect conclusions |
 
 ---
@@ -227,12 +218,12 @@ Every LLM invocation captures:
 
 ### Provider Isolation
 
-| Control | Implementation |
-|:--------|:---------------|
+| Control               | Implementation                                  |
+| :-------------------- | :---------------------------------------------- |
 | Credential Separation | Each provider has separate, rotated credentials |
-| Request Isolation | No cross-provider request correlation |
-| Response Isolation | Provider responses not shared across tenants |
-| Failure Isolation | Provider failures don't cascade |
+| Request Isolation     | No cross-provider request correlation           |
+| Response Isolation    | Provider responses not shared across tenants    |
+| Failure Isolation     | Provider failures don't cascade                 |
 
 ---
 

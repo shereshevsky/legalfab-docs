@@ -16,15 +16,15 @@ LegalFab is an AI-powered legal technology platform built on a metadata-driven a
 
 ### Platform Components
 
-| Component | Purpose | Key Capabilities |
-|:----------|:--------|:-----------------|
-| Knowledge Fabric | Data integration and intelligence layer | Persistent Knowledge Graph, Entity Resolution, 200+ MCP Connectors, Corporate Ownership Data, Search Sessions |
-| Studio | Creation and execution environment | Agent Builder, Widgets, Datasets, Chain of Agents, Operational Modes (0-4) |
-| Dialog | Conversational intelligence interface | Natural Language Understanding, Intelligent Routing, Cross-Platform Context, Long-Term Memory |
-| Schema Management | Business domain definition and control | Domain Discovery, Schema Registry, Schema Validation |
-| AI & LLM Layer | Intelligent processing and inference | LightLLM Gateway, Output Consistency, Model Provenance, A/B Testing |
-| AML Compliance | Regulatory compliance module | Rule Engine, BPM Workflows, Screening, Case Management |
-| DevOps Infrastructure | Deployment and operations | CI/CD Pipelines, Monitoring, Security Operations |
+| Component             | Purpose                                 | Key Capabilities                                                                              |
+| :-------------------- | :-------------------------------------- | :-------------------------------------------------------------------------------------------- |
+| Knowledge Fabric      | Data integration and intelligence layer | Persistent Knowledge Graph, Entity Resolution, 200+ MCP Connectors, Search Sessions           |
+| Studio                | Creation and execution environment      | Agent Builder, Widgets, Datasets, Chain of Agents, Operational Modes (0-4)                    |
+| Dialog                | Conversational intelligence interface   | Natural Language Understanding, Intelligent Routing, Cross-Platform Context, Long-Term Memory |
+| Schema Management     | Business domain definition and control  | Domain Discovery, Schema Registry, Schema Validation                                          |
+| AI & LLM Layer        | Intelligent processing and inference    | LightLLM Gateway, Output Consistency, Model Provenance                                        |
+| AML Compliance        | Regulatory compliance module            | Rule Engine, BPM Workflows, Screening, Case Management                                        |
+| DevOps Infrastructure | Deployment and operations               | CI/CD Pipelines, Monitoring, Security Operations                                              |
 
 ---
 
@@ -129,18 +129,16 @@ The Knowledge Fabric serves as the foundational data integration and intelligenc
 
 ### Core Capabilities
 
-| Capability | Description |
-|:-----------|:------------|
-| Persistent Knowledge Graph | Corporate memory with schema-bounded extraction, source provenance, and Knowledge Tree structure |
-| Entity Resolution | Cross-source entity matching using blocking, matching, and clustering algorithms with golden record management |
-| 200+ MCP Connectors | Federated queries across databases, SaaS applications, legal systems, and corporate registries |
-| Corporate Ownership Data | Companies House, Bureau van Dijk, D&B, GLEIF LEI for beneficial ownership chain analysis |
-| Two-Way Data Flow | Read from and write back to source systems while maintaining data at source |
-| Search Sessions | Iterative exploration with session graphs and accumulated context |
-| Data Observability | Quality monitoring, freshness tracking, and automated alerts |
-| Discovery Service | Automated identification and cataloging of data assets |
-| Active Metadata | Continuous metadata analysis, profiling, and enrichment |
-| Data Lineage | End-to-end tracking of data flow from source to consumption |
+| Capability                 | Description                                                                                                    |
+| :------------------------- | :------------------------------------------------------------------------------------------------------------- |
+| Persistent Knowledge Graph | Corporate memory with schema-bounded extraction, source provenance, and Knowledge Tree structure               |
+| Entity Resolution          | Cross-source entity matching using blocking, matching, and clustering algorithms with golden record management |
+| 200+ MCP Connectors        | Federated queries across databases, SaaS applications, legal systems, and corporate registries                 |
+| Search Sessions            | Iterative exploration with session graphs and accumulated context                                              |
+| Data Observability         | Quality monitoring, freshness tracking, and automated alerts                                                   |
+| Discovery Service          | Automated identification and cataloging of data assets                                                         |
+| Active Metadata            | Continuous metadata analysis, profiling, and enrichment                                                        |
+| Data Lineage               | End-to-end tracking of data flow from source to consumption                                                    |
 
 ### Knowledge Graph Model
 
@@ -148,14 +146,14 @@ The Knowledge Graph stores entities as nodes and relationships as edges, enablin
 
 **Entity Types:**
 
-| Entity | Description | Use Cases |
-|:-------|:------------|:----------|
-| Person | Individual clients, contacts, beneficial owners | KYC, risk assessment, relationship mapping |
-| Organization | Corporate clients, counterparties, related entities | Corporate structure, ownership analysis |
-| Matter | Legal matters, cases, engagements | Matter management, conflict checking |
-| Document | Contracts, filings, correspondence | Document management, search |
-| Address | Physical and registered addresses | Location analysis, verification |
-| Identifier | Tax IDs, registration numbers, LEIs | Cross-reference, verification |
+| Entity       | Description                                         | Use Cases                                  |
+| :----------- | :-------------------------------------------------- | :----------------------------------------- |
+| Person       | Individual clients, contacts, beneficial owners     | KYC, risk assessment, relationship mapping |
+| Organization | Corporate clients, counterparties, related entities | Corporate structure, ownership analysis    |
+| Matter       | Legal matters, cases, engagements                   | Matter management, conflict checking       |
+| Document     | Contracts, filings, correspondence                  | Document management, search                |
+| Address      | Physical and registered addresses                   | Location analysis, verification            |
+| Identifier   | Tax IDs, registration numbers, LEIs                 | Cross-reference, verification              |
 
 **Relationship Types:**
 
@@ -216,13 +214,13 @@ Users describe desired workflows in natural language, and the system generates a
 
 Agents are the fundamental execution unit in Studio. Each agent has:
 
-| Component | Description |
-|:----------|:------------|
-| Definition | Name, version, description, category |
-| Inputs | Input parameters with schemas and validation rules |
-| Workflow | Execution steps, tool calls, conditional logic |
-| Outputs | Result definitions with transformation rules |
-| Permissions | Required data access scopes and tool authorizations |
+| Component   | Description                                         |
+| :---------- | :-------------------------------------------------- |
+| Definition  | Name, version, description, category                |
+| Inputs      | Input parameters with schemas and validation rules  |
+| Workflow    | Execution steps, tool calls, conditional logic      |
+| Outputs     | Result definitions with transformation rules        |
+
 
 ### Chain of Agents
 
@@ -585,4 +583,4 @@ LegalFab is available in multiple deployment configurations to meet varying secu
 
 ---
 
-*For detailed security controls, see individual component documents: Knowledge Fabric, Studio, Dialog, AI-LLM, AML Compliance, and API Security.*
+*For detailed information see individual component documents: Knowledge Fabric, Studio, Dialog, AI-LLM, AML Compliance, and API Security.*
