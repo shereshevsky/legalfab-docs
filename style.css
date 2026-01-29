@@ -1,0 +1,580 @@
+/* LegalFab Documentation - MkDocs Material Dark Theme Style */
+/* Based on Material for MkDocs - Slate color scheme with Teal accents */
+
+/* ============================================== */
+/* CSS Variables - Color Palette                  */
+/* ============================================== */
+:root {
+    /* Primary colors - Black primary */
+    --md-primary-fg-color: #000000;
+    --md-primary-fg-color--light: #1a1a1a;
+    --md-primary-fg-color--dark: #000000;
+    --md-primary-bg-color: #ffffff;
+    --md-primary-bg-color--light: rgba(255, 255, 255, 0.7);
+
+    /* Accent colors - Teal */
+    --md-accent-fg-color: #1de9b6;
+    --md-accent-fg-color--transparent: rgba(29, 233, 182, 0.1);
+    --md-accent-bg-color: #ffffff;
+
+    /* Slate dark scheme */
+    --md-default-fg-color: rgba(255, 255, 255, 0.87);
+    --md-default-fg-color--light: rgba(255, 255, 255, 0.54);
+    --md-default-fg-color--lighter: rgba(255, 255, 255, 0.32);
+    --md-default-fg-color--lightest: rgba(255, 255, 255, 0.12);
+    --md-default-bg-color: #1e1e1e;
+    --md-default-bg-color--light: #2d2d2d;
+    --md-default-bg-color--lighter: #3d3d3d;
+    --md-default-bg-color--lightest: #4d4d4d;
+
+    /* Code colors */
+    --md-code-fg-color: #e0e0e0;
+    --md-code-bg-color: #272727;
+    --md-code-hl-color: rgba(29, 233, 182, 0.15);
+    --md-code-hl-number-color: #f78c6c;
+    --md-code-hl-special-color: #89ddff;
+    --md-code-hl-function-color: #82aaff;
+    --md-code-hl-constant-color: #f78c6c;
+    --md-code-hl-keyword-color: #c792ea;
+    --md-code-hl-string-color: #c3e88d;
+    --md-code-hl-name-color: #82aaff;
+    --md-code-hl-operator-color: #89ddff;
+    --md-code-hl-punctuation-color: #89ddff;
+    --md-code-hl-comment-color: #717cb4;
+    --md-code-hl-generic-color: #eeffff;
+    --md-code-hl-variable-color: #eeffff;
+
+    /* Typography */
+    --md-text-font: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    --md-code-font: "Roboto Mono", SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+
+    /* Typeset colors */
+    --md-typeset-color: var(--md-default-fg-color);
+    --md-typeset-a-color: var(--md-accent-fg-color);
+
+    /* Table colors */
+    --md-typeset-table-color: rgba(255, 255, 255, 0.12);
+
+    /* Footer */
+    --md-footer-fg-color: rgba(255, 255, 255, 0.65);
+    --md-footer-fg-color--light: rgba(255, 255, 255, 0.45);
+    --md-footer-fg-color--lighter: rgba(255, 255, 255, 0.3);
+    --md-footer-bg-color: rgba(0, 0, 0, 0.87);
+    --md-footer-bg-color--dark: rgba(0, 0, 0, 0.92);
+
+    /* Shadow */
+    --md-shadow-z1: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2), 0 0 0.05rem rgba(0, 0, 0, 0.1);
+    --md-shadow-z2: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.3), 0 0 0.05rem rgba(0, 0, 0, 0.2);
+    --md-shadow-z3: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.4), 0 0 0.05rem rgba(0, 0, 0, 0.3);
+}
+
+/* ============================================== */
+/* Base Styles                                    */
+/* ============================================== */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--md-text-font);
+    font-size: 0.8rem;
+    line-height: 1.6;
+    color: var(--md-default-fg-color);
+    background-color: var(--md-default-bg-color);
+    background-image: radial-gradient(rgba(83, 186, 90, 0.2) 1px, transparent 1px);
+    background-size: 20px 20px;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* ============================================== */
+/* Typography                                     */
+/* ============================================== */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--md-default-fg-color);
+    font-weight: 400;
+    line-height: 1.4;
+    margin-top: 1.5em;
+    margin-bottom: 0.8em;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: 300;
+    margin-top: 0;
+    border-bottom: 1px solid var(--md-default-fg-color--lightest);
+    padding-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 1.5625em;
+    font-weight: 300;
+    border-bottom: 1px solid var(--md-default-fg-color--lightest);
+    padding-bottom: 0.3em;
+}
+
+h3 {
+    font-size: 1.25em;
+    font-weight: 200 !important;
+}
+
+h4 {
+    font-size: 1em;
+    font-weight: 500;
+}
+
+h5, h6 {
+    font-size: 0.9em;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+p {
+    margin: 0 0 1em 0;
+}
+
+/* ============================================== */
+/* Links                                          */
+/* ============================================== */
+a {
+    color: var(--md-accent-fg-color);
+    text-decoration: none;
+    word-break: break-word;
+    transition: color 0.125s;
+}
+
+a:hover, a:focus {
+    color: var(--md-accent-fg-color);
+    text-decoration: underline;
+}
+
+/* ============================================== */
+/* Horizontal Rules                               */
+/* ============================================== */
+hr {
+    border: 0;
+    height: 1px;
+    background: var(--md-default-fg-color--lightest);
+    margin: 2em 0;
+}
+
+/* ============================================== */
+/* Tables                                         */
+/* ============================================== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 1.5em 0;
+    font-size: 0.8rem;
+    overflow: hidden;
+    border-radius: 0.2rem;
+    box-shadow: var(--md-shadow-z1);
+}
+
+table:not([class]) {
+    background-color: var(--md-default-bg-color--light);
+}
+
+th {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: var(--md-default-fg-color);
+    font-weight: 500;
+    text-align: left;
+    padding: 0.9375em 1.25em;
+    min-width: 6rem;
+    vertical-align: top;
+}
+
+td {
+    padding: 0.9375em 1.25em;
+    vertical-align: top;
+    border-top: 1px solid var(--md-typeset-table-color);
+}
+
+tr:hover {
+    background-color: rgba(255, 255, 255, 0.04);
+}
+
+/* Boxtable styling */
+.boxtable table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+}
+
+.boxtable th, .boxtable td {
+    padding: 12px;
+    text-align: left;
+    border-left: 1px solid rgba(240, 241, 244, 0.12);
+}
+
+.boxtable tr:hover {
+    background-color: rgba(255, 255, 255, 0.04);
+}
+
+/* ============================================== */
+/* Code                                           */
+/* ============================================== */
+code, kbd, pre, samp {
+    font-family: var(--md-code-font);
+}
+
+code {
+    background-color: var(--md-code-bg-color);
+    color: var(--md-code-fg-color);
+    padding: 0.1em 0.4em;
+    border-radius: 0.2rem;
+    font-size: 0.85em;
+    word-break: break-word;
+}
+
+pre {
+    background-color: var(--md-code-bg-color);
+    color: var(--md-code-fg-color);
+    padding: 1em 1.2em;
+    border-radius: 0.2rem;
+    overflow-x: auto;
+    line-height: 1.5;
+    margin: 1em 0;
+}
+
+pre code {
+    background-color: transparent;
+    padding: 0;
+    font-size: 0.85em;
+}
+
+kbd {
+    background-color: var(--md-default-fg-color--lightest);
+    color: var(--md-default-fg-color);
+    padding: 0.1em 0.5em;
+    border-radius: 0.2rem;
+    box-shadow: 0 0.1rem 0 0.05rem var(--md-default-bg-color),
+                0 0.1rem 0 var(--md-default-fg-color--lighter);
+    font-size: 0.85em;
+}
+
+/* ============================================== */
+/* Blockquotes                                    */
+/* ============================================== */
+blockquote {
+    margin: 1em 0;
+    padding: 0 1em;
+    border-left: 0.25rem solid var(--md-accent-fg-color);
+    color: var(--md-default-fg-color--light);
+}
+
+blockquote p {
+    margin: 0.5em 0;
+}
+
+/* ============================================== */
+/* Lists                                          */
+/* ============================================== */
+ul, ol {
+    margin: 1em 0;
+    padding-left: 1.5em;
+}
+
+li {
+    margin: 0.4em 0;
+}
+
+li > ul, li > ol {
+    margin: 0.4em 0;
+}
+
+/* Task lists */
+ul.task-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.task-list-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5em;
+}
+
+.task-list-item input[type="checkbox"] {
+    margin-top: 0.3em;
+}
+
+/* ============================================== */
+/* Images                                         */
+/* ============================================== */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.2rem;
+}
+
+figure {
+    margin: 1.5em 0;
+    text-align: center;
+}
+
+figcaption {
+    color: var(--md-default-fg-color--light);
+    font-size: 0.85em;
+    margin-top: 0.5em;
+}
+
+/* ============================================== */
+/* Layout - Header                                */
+/* ============================================== */
+header, .md-header {
+    background: var(--md-primary-fg-color) !important;
+    color: var(--md-primary-bg-color);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: var(--md-shadow-z2);
+}
+
+.md-header__title {
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+/* ============================================== */
+/* Layout - Navigation                            */
+/* ============================================== */
+nav a {
+    color: var(--md-default-fg-color--light);
+    display: block;
+    padding: 0.5em 1em;
+    transition: color 0.125s, background-color 0.125s;
+}
+
+nav a:hover {
+    color: var(--md-accent-fg-color);
+    text-decoration: none;
+}
+
+nav a.active {
+    color: var(--md-accent-fg-color);
+    font-weight: 500;
+}
+
+.md-nav__link .md-ellipsis {
+    font-weight: 250;
+}
+
+/* ============================================== */
+/* Layout - Sidebar                               */
+/* ============================================== */
+.md-sidebar--secondary .md-nav__link .md-ellipsis {
+    font-size: 12px;
+}
+
+.md-sidebar--secondary .md-sidebar__inner {
+    max-height: 400px;
+    overflow: auto;
+    direction: rtl;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+}
+
+.md-sidebar--secondary .md-nav--secondary {
+    direction: ltr;
+    border-left: 3px solid rgba(219, 219, 248, 0.2);
+    padding: 3px;
+}
+
+.md-sidebar--secondary .md-sidebar__inner:hover {
+    scrollbar-color: var(--md-accent-fg-color) transparent;
+}
+
+/* ============================================== */
+/* Layout - Main Content                          */
+/* ============================================== */
+.md-content, main, article {
+    padding: 1.5rem;
+    max-width: 61rem;
+    margin: 0 auto;
+}
+
+/* ============================================== */
+/* Layout - Footer                                */
+/* ============================================== */
+footer, .md-footer {
+    background-color: var(--md-footer-bg-color);
+    color: var(--md-footer-fg-color);
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+footer a {
+    color: var(--md-footer-fg-color);
+}
+
+footer a:hover {
+    color: var(--md-accent-fg-color);
+}
+
+/* ============================================== */
+/* Admonitions / Callouts                         */
+/* ============================================== */
+.admonition, .note, .warning, .tip, .important, .caution {
+    margin: 1.5em 0;
+    padding: 1em 1.2em;
+    border-radius: 0.2rem;
+    border-left: 0.25rem solid;
+    background-color: var(--md-default-bg-color--light);
+}
+
+.note {
+    border-color: #448aff;
+}
+
+.warning, .caution {
+    border-color: #ff9100;
+}
+
+.tip {
+    border-color: #00c853;
+}
+
+.important {
+    border-color: #ff5252;
+}
+
+.admonition-title {
+    font-weight: 500;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    letter-spacing: 0.05em;
+}
+
+/* ============================================== */
+/* Scrollbar Styling                              */
+/* ============================================== */
+::-webkit-scrollbar {
+    width: 0.4rem;
+    height: 0.4rem;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--md-default-fg-color--lighter);
+    border-radius: 0.2rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--md-accent-fg-color);
+}
+
+/* ============================================== */
+/* Selection                                      */
+/* ============================================== */
+::selection {
+    background-color: var(--md-accent-fg-color--transparent);
+    color: var(--md-default-fg-color);
+}
+
+::-moz-selection {
+    background-color: var(--md-accent-fg-color--transparent);
+    color: var(--md-default-fg-color);
+}
+
+/* ============================================== */
+/* Print Styles                                   */
+/* ============================================== */
+@media print {
+    body {
+        background: white;
+        color: black;
+    }
+
+    a {
+        color: inherit;
+        text-decoration: underline;
+    }
+
+    table {
+        box-shadow: none;
+        border: 1px solid #ccc;
+    }
+
+    th, td {
+        border: 1px solid #ccc;
+    }
+
+    pre, code {
+        background-color: #f5f5f5;
+        color: #333;
+    }
+}
+
+/* ============================================== */
+/* Responsive Design                              */
+/* ============================================== */
+@media screen and (max-width: 76.1875em) {
+    .md-content, main, article {
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 60em) {
+    table {
+        font-size: 0.75rem;
+    }
+
+    th, td {
+        padding: 0.75em 1em;
+    }
+}
+
+@media screen and (max-width: 44.9375em) {
+    h1 {
+        font-size: 1.6em;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    h3 {
+        font-size: 1.1em;
+    }
+}
+
+/* ============================================== */
+/* Utility Classes                                */
+/* ============================================== */
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-left { text-align: left; }
+
+.mt-0 { margin-top: 0; }
+.mb-0 { margin-bottom: 0; }
+
+.hidden { display: none; }
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}

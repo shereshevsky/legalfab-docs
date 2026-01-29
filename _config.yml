@@ -1,8 +1,13 @@
 # GitHub Pages Configuration for LegalFab Documentation
+# Material-inspired Dark Theme
 
 title: LegalFab Documentation
 description: Security and architecture documentation for the LegalFab AI-powered legal technology platform
-theme: jekyll-theme-cayman
+
+# Use minimal theme for maximum customization
+remote_theme: pages-themes/minimal@v0.2.0
+plugins:
+  - jekyll-remote-theme
 
 # Build settings
 markdown: kramdown
@@ -23,8 +28,23 @@ header_pages:
   - index.md
   - 00-Table-of-Contents.md
 
-# Optional: Enable table of contents
+# Kramdown settings
 kramdown:
   toc_levels: 1..3
   input: GFM
   hard_wrap: false
+  auto_ids: true
+  syntax_highlighter: rouge
+
+# Collections for documentation
+collections:
+  docs:
+    output: true
+    permalink: /:path/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default

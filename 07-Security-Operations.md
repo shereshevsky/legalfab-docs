@@ -1,3 +1,8 @@
+---
+layout: default
+title: Security Operations
+---
+
 # LegalFab Security Operations
 
 **Version:** 1.0

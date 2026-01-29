@@ -1,3 +1,8 @@
+---
+layout: default
+title: Table of Contents
+---
+
 # LegalFab Documentation - Table of Contents
 
 **Version:** 1.5
@@ -10,7 +15,7 @@
 | Document | Description | Version |
 |:---------|:------------|:--------|
 | [01-Introduction](./01-Introduction.md) | Platform overview and security summary | 1.2 |
-| [02-Architecture](./02-Architecture.md) | System architecture and components | 1.3 |
+| [02-Architecture](./02-Architecture.md) | System architecture and components | 1.4 |
 | [03-Knowledge-Fabric](./03-Knowledge-Fabric.md) | Data integration and knowledge graph | 1.6 |
 | [04-Studio](./04-Studio.md) | Agent creation and workflow design | 1.5 |
 | [05-AI-LLM](./05-AI-LLM.md) | AI and LLM security architecture | 1.1 |
@@ -57,9 +62,21 @@
 - Text-to-Pipeline
 - Agent Architecture
 - Chain of Agents
+- Operational Modes
+
+### Dialog
+- Core Capabilities
+- Dialog State Machine
+- Function Routing
+
+### Schema Management
+- Core Capabilities
+- Schema Usage Across Platform
+- Document-to-Schema Discovery
 
 ### AI & LLM Layer
 - Core Capabilities
+- LLM Output Consistency
 - Provider Support
 
 ### AML Compliance Module

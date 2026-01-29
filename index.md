@@ -1,3 +1,8 @@
+---
+layout: default
+title: Home
+---
+
 # LegalFab Platform Documentation
 
 Welcome to the LegalFab platform security and architecture documentation.
@@ -15,7 +20,7 @@ LegalFab is an AI-powered legal technology platform built on a metadata-driven a
 | Document | Description | Version |
 |:---------|:------------|:-------:|
 | [Introduction](./01-Introduction.md) | Platform overview, capabilities, and security summary | 1.2 |
-| [Architecture](./02-Architecture.md) | System architecture, deployment models, security boundaries | 1.3 |
+| [Architecture](./02-Architecture.md) | System architecture, deployment models, security boundaries | 1.4 |
 | [Knowledge Fabric](./03-Knowledge-Fabric.md) | Knowledge graph, entity resolution, MCP connectors, corporate ownership | 1.6 |
 | [Studio](./04-Studio.md) | Agent creation, widgets, datasets, operational modes | 1.5 |
 | [AI & LLM](./05-AI-LLM.md) | LLM security, output consistency, model provenance | 1.1 |

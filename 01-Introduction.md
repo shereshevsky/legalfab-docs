@@ -1,3 +1,8 @@
+---
+layout: default
+title: Introduction
+---
+
 # LegalFab Platform - Documentation
 
 **Version:** 1.2
@@ -38,15 +43,14 @@ LegalFab is an AI-powered legal technology platform built on a metadata-driven a
 
 The Knowledge Fabric serves as the foundational data integration and intelligence layer, implementing a metadata-driven architecture that provides unified access while leaving source data in place.
 
-| Capability | Description |
-|:-----------|:------------|
-| Persistent Knowledge Graph | Corporate memory with schema-bounded extraction and source provenance |
-| Entity Resolution | Cross-source entity matching with golden record management |
-| 200+ MCP Connectors | Federated queries across databases, SaaS, legal systems, corporate registries |
-| Corporate Ownership Integration | Companies House, Bureau van Dijk, D&B, GLEIF LEI for beneficial ownership chains |
-| Two-Way Data Flow | Read from and write back to source systems |
-| Search Sessions | Iterative exploration with accumulated context |
-| Data Observability | Quality monitoring, freshness tracking, automated alerts |
+| Capability                 | Description                                                                       |
+| :------------------------- | :-------------------------------------------------------------------------------- |
+| Persistent Knowledge Graph | Corporate memory with schema-bounded extraction and source provenance             |
+| Entity Resolution          | Cross-source entity matching with golden record management                        |
+| 200+ MCP Connectors        | Federated queries across databases, SaaS, legal systems, and corporate registries |
+| Two-Way Data Flow          | Read from and write back to source systems                                        |
+| Search Sessions            | Iterative exploration with accumulated context                                    |
+| Data Observability         | Quality monitoring, freshness tracking, automated alerts                          |
 
 ### Studio
 

@@ -1,3 +1,8 @@
+---
+layout: default
+title: Dialog
+---
+
 # LegalFab Dialog
 
 **Version:** 1.0

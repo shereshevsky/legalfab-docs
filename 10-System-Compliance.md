@@ -1,3 +1,8 @@
+---
+layout: default
+title: System Compliance
+---
+
 # LegalFab System Compliance & Governance
 
 **Version:** 1.2

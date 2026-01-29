@@ -1,3 +1,8 @@
+---
+layout: default
+title: CI/CD
+---
+
 # LegalFab CI/CD
 
 **Version:** 1.0

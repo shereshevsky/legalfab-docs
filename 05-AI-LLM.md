@@ -1,3 +1,8 @@
+---
+layout: default
+title: AI & LLM
+---
+
 # LegalFab AI & LLM
 
 **Version:** 1.1

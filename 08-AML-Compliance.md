@@ -1,3 +1,8 @@
+---
+layout: default
+title: AML Compliance
+---
+
 # LegalFab AML Compliance
 
 **Version:** 1.0

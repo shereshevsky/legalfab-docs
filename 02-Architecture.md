@@ -1,6 +1,11 @@
+---
+layout: default
+title: Architecture
+---
+
 # LegalFab System Architecture
 
-**Version:** 1.3
+**Version:** 1.4
 **Last Updated:** January 2026
 
 ---
@@ -13,10 +18,11 @@ LegalFab is an AI-powered legal technology platform built on a metadata-driven a
 
 | Component | Purpose | Key Capabilities |
 |:----------|:--------|:-----------------|
-| Knowledge Fabric | Data integration and intelligence layer | Knowledge Graph, Entity Resolution, Connectivity, Discovery, Lineage |
-| Studio | Creation and execution environment | Agent Builder, Chain of Agents, Workflow Designer, Testing Framework |
+| Knowledge Fabric | Data integration and intelligence layer | Persistent Knowledge Graph, Entity Resolution, 200+ MCP Connectors, Corporate Ownership Data, Search Sessions |
+| Studio | Creation and execution environment | Agent Builder, Widgets, Datasets, Chain of Agents, Operational Modes (0-4) |
+| Dialog | Conversational intelligence interface | Natural Language Understanding, Intelligent Routing, Cross-Platform Context, Long-Term Memory |
 | Schema Management | Business domain definition and control | Domain Discovery, Schema Registry, Schema Validation |
-| AI & LLM Layer | Intelligent processing and inference | LightLLM Gateway, Provider Abstraction, Prompt Management |
+| AI & LLM Layer | Intelligent processing and inference | LightLLM Gateway, Output Consistency, Model Provenance, A/B Testing |
 | AML Compliance | Regulatory compliance module | Rule Engine, BPM Workflows, Screening, Case Management |
 | DevOps Infrastructure | Deployment and operations | CI/CD Pipelines, Monitoring, Security Operations |
 
@@ -27,21 +33,29 @@ LegalFab is an AI-powered legal technology platform built on a metadata-driven a
 ```
 ┌─────────────────────────────────────────────────────────────────────────┐
 │                        PRESENTATION LAYER                               │
-│  ┌──────────────┐  ┌──────────────┐  ┌──────────────────────────────┐   │
-│  │   Web UI     │  │  API Gateway │  │  Platform Integration APIs   │   │
-│  │              │  │  (REST)      │  │                              │   │
-│  └──────────────┘  └──────────────┘  └──────────────────────────────┘   │
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐  ┌────────────┐   │
+│  │   Web UI     │  │  API Gateway │  │    Dialog    │  │  Messaging │   │
+│  │              │  │  (REST)      │  │   Interface  │  │  Mini-App  │   │
+│  └──────────────┘  └──────────────┘  └──────────────┘  └────────────┘   │
 │                              │                                          │
 │                   [Authentication, Rate Limiting, Input Validation]     │
 ├─────────────────────────────────────────────────────────────────────────┤
 │                          APPLICATION LAYER                              │
 │                                                                         │
 │  ┌─────────────────────────────────────────────────────────────────┐    │
+│  │                          DIALOG                                 │    │
+│  │  ┌───────────┐  ┌───────────────┐  ┌───────────┐  ┌──────────┐  │    │
+│  │  │    NLU    │  │    Dialog     │  │  Function │  │ Context  │  │    │
+│  │  │  Engine   │  │    Manager    │  │  Router   │  │ Manager  │  │    │
+│  │  └───────────┘  └───────────────┘  └───────────┘  └──────────┘  │    │
+│  └─────────────────────────────────────────────────────────────────┘    │
+│                                                                         │
+│  ┌─────────────────────────────────────────────────────────────────┐    │
 │  │                          STUDIO                                 │    │
-│  │  ┌───────────┐  ┌───────────────┐  ┌──────────────────────┐     │    │
-│  │  │  Agent    │  │  Chain of     │  │  Workflow Designer   │     │    │
-│  │  │  Builder  │  │  Agents       │  │                      │     │    │
-│  │  └───────────┘  └───────────────┘  └──────────────────────┘     │    │
+│  │  ┌───────────┐  ┌───────────┐  ┌───────────┐  ┌──────────────┐  │    │
+│  │  │  Agent    │  │  Widgets  │  │ Datasets  │  │  Chain of    │  │    │
+│  │  │  Builder  │  │           │  │           │  │  Agents      │  │    │
+│  │  └───────────┘  └───────────┘  └───────────┘  └──────────────┘  │    │
 │  └─────────────────────────────────────────────────────────────────┘    │
 │                                                                         │
 │  ┌─────────────────────────────────────────────────────────────────┐    │
@@ -111,19 +125,22 @@ LegalFab is an AI-powered legal technology platform built on a metadata-driven a
 
 ## Knowledge Fabric
 
-The Knowledge Fabric serves as the foundational data integration and intelligence layer for the LegalFab platform.
+The Knowledge Fabric serves as the foundational data integration and intelligence layer for the LegalFab platform. It implements a metadata-driven architecture that provides unified access to distributed data assets while leaving source data in place.
 
 ### Core Capabilities
 
 | Capability | Description |
 |:-----------|:------------|
-| Knowledge Graph | Graph-native storage for entities and relationships with traversal queries |
-| Entity Resolution | Cross-source entity matching using blocking, matching, and clustering algorithms |
-| Connectivity | Direct database connections, API integrations, and MCP protocol connectors |
+| Persistent Knowledge Graph | Corporate memory with schema-bounded extraction, source provenance, and Knowledge Tree structure |
+| Entity Resolution | Cross-source entity matching using blocking, matching, and clustering algorithms with golden record management |
+| 200+ MCP Connectors | Federated queries across databases, SaaS applications, legal systems, and corporate registries |
+| Corporate Ownership Data | Companies House, Bureau van Dijk, D&B, GLEIF LEI for beneficial ownership chain analysis |
+| Two-Way Data Flow | Read from and write back to source systems while maintaining data at source |
+| Search Sessions | Iterative exploration with session graphs and accumulated context |
+| Data Observability | Quality monitoring, freshness tracking, and automated alerts |
 | Discovery Service | Automated identification and cataloging of data assets |
 | Active Metadata | Continuous metadata analysis, profiling, and enrichment |
 | Data Lineage | End-to-end tracking of data flow from source to consumption |
-| External Sources | Integration with OSINT, corporate registries, and third-party data providers |
 
 ### Knowledge Graph Model
 
@@ -167,18 +184,20 @@ Source Records → Blocking → Candidate Pairs → Matching → Clusters → Go
 
 ## Studio
 
-The Studio provides the creation and execution environment for AI agents and workflows.
+The Studio provides the creation and execution environment for AI agents, widgets, datasets, and workflows. The platform supports five operational modes enabling organizations to balance automation with human oversight.
 
 ### Core Capabilities
 
 | Capability | Description |
 |:-----------|:------------|
+| Agent Creation | Domain-driven flow with schema selection, natural language definition, and testing |
+| Widgets | Agents with visual interface components (charts, tables, custom views) |
+| Datasets | Structured data collections with schema enforcement and access controls |
+| Business Domain Discovery | Extract schemas from documents to define entity structures |
+| Chain of Agents | Orchestrate multiple agents in sequential, parallel, or hierarchical patterns |
+| Operational Modes | Five modes from traditional platform (Mode 0) to fully automated with audit (Mode 4) |
 | Text-to-Pipeline | Natural language pipeline generation with DSL output and iterative refinement |
-| Agent Builder | Create AI agents with defined inputs, outputs, and behaviors |
-| Chain of Agents | Orchestrate multiple agents in sequential or parallel patterns |
-| Workflow Designer | Visual workflow builder with conditional logic and branching |
 | Testing Framework | Test agents and workflows in sandboxed environments |
-| MCP Tool Integrator | Connect agents to external tools via Model Context Protocol |
 
 ### Text-to-Pipeline
 
@@ -215,6 +234,57 @@ Chains enable complex workflows by orchestrating multiple agents:
 | Parallel | Agents execute concurrently | Multi-source research |
 | Conditional | Agent selection based on runtime conditions | Risk-based routing |
 | Loop | Repeated execution until condition met | Iterative refinement |
+
+### Operational Modes
+
+The platform supports five operational modes enabling organizations to configure automation levels:
+
+| Mode | Name | Description |
+|:-----|:-----|:------------|
+| 0 | Traditional Platform | No AI agents; manual investigation and analysis |
+| 1 | AI-Assisted Manual | Agents in suggest-only mode; all decisions require human approval |
+| 2 | Routine Automation | Agents handle routine tasks; humans focus on analysis and decisions |
+| 3 | Autonomous with Escalation | Full automation with escalation on exceptions |
+| 4 | Fully Automated with Audit | End-to-end automation with post-investigation human audits |
+
+---
+
+## Dialog
+
+The Dialog component serves as the central conversational intelligence layer, enabling natural language interaction across all platform components.
+
+### Core Capabilities
+
+| Capability | Description |
+|:-----------|:------------|
+| Natural Language Understanding | Intent classification, entity extraction, context analysis |
+| Intelligent Routing | Routes queries to Knowledge Fabric, Studio, Marketplace, or Exchange |
+| Multi-Level Query Processing | Handles complex queries requiring multiple platform components |
+| Cross-Platform Continuity | Maintains context between web and messaging applications |
+| Long-Term Memory | Preserves conversation history across sessions |
+| Document Processing | Handles document uploads within conversations |
+| Intelligent Caching | Two-layer caching (exact match + semantic) for performance |
+
+### Dialog State Machine
+
+| State | Description |
+|:------|:------------|
+| IDLE | Waiting for user input |
+| PROCESSING | Analyzing user request via NLU |
+| ROUTING | Determining appropriate platform components |
+| EXECUTING | Calling platform functions |
+| RESPONDING | Generating user response |
+| CLARIFYING | Requesting additional information |
+| ERROR | Handling errors and recovery |
+
+### Function Routing
+
+| Component | Query Types |
+|:----------|:------------|
+| Knowledge Fabric | Search, entity lookup, graph traversal |
+| Studio | Agent invocation, pipeline execution, creation assistance |
+| Marketplace | Asset search, details, acquisition |
+| Exchange | Data sharing, collaboration, access requests |
 
 ---
 
@@ -255,16 +325,28 @@ The Schema Management system provides a unified approach to defining, discoverin
 
 ## AI & LLM Layer
 
-The AI & LLM Layer provides intelligent processing capabilities through a provider-agnostic gateway.
+The AI & LLM Layer provides intelligent processing capabilities through a provider-agnostic gateway with comprehensive output consistency and quality controls.
 
 ### Core Capabilities
 
 | Capability | Description |
 |:-----------|:------------|
 | LightLLM Gateway | Unified interface for multiple LLM providers |
+| Output Consistency | Schema-validated extraction and ontology-based execution |
+| Model Provenance | Complete tracking of model versions and configurations |
+| A/B Testing | Controlled model updates with performance comparison |
+| Quality Assurance | Feedback loops, accuracy monitoring, reasoning chain transparency |
 | Provider Abstraction | Swap providers without code changes |
 | Prompt Management | Template library with version control |
-| Response Processing | Output parsing, validation, and transformation |
+
+### LLM Output Consistency
+
+| Control | Description |
+|:--------|:------------|
+| Schema-Validated Extraction | All outputs validated against user-defined schemas |
+| Ontology-Based Execution | Responses grounded in domain ontology |
+| Reasoning Chain Transparency | Full reasoning paths logged for audit |
+| Deterministic Components | Separation of deterministic vs. probabilistic processing |
 
 ### Provider Support
 
@@ -493,7 +575,8 @@ LegalFab is available in multiple deployment configurations to meet varying secu
 | Feature | SaaS | Dedicated | Customer Cloud | On-Premises |
 |:--------|:-----|:----------|:---------------|:------------|
 | Knowledge Fabric | ✓ | ✓ | ✓ | ✓ |
-| Studio & Agents | ✓ | ✓ | ✓ | ✓ |
+| Studio (Agents, Widgets, Datasets) | ✓ | ✓ | ✓ | ✓ |
+| Dialog Interface | ✓ | ✓ | ✓ | ✓ |
 | Multi-Tenancy | ✓ | ✓ | ✓ | ✓ |
 | LLM Integration | ✓ | ✓ | ✓ | ✓ |
 | Custom Region | Limited | ✓ | ✓ | N/A |
@@ -502,4 +585,4 @@ LegalFab is available in multiple deployment configurations to meet varying secu
 
 ---
 
-*For detailed security controls, see individual component documents: Knowledge Fabric, Studio, AI-LLM, and AML Compliance.*
+*For detailed security controls, see individual component documents: Knowledge Fabric, Studio, Dialog, AI-LLM, AML Compliance, and API Security.*

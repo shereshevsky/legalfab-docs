@@ -1,3 +1,8 @@
+---
+layout: default
+title: Schema Management
+---
+
 # LegalFab Schema Management & Business Domain Discovery
 
 **Version:** 1.0

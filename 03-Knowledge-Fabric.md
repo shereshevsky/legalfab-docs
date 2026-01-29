@@ -1,3 +1,8 @@
+---
+layout: default
+title: Knowledge Fabric
+---
+
 # LegalFab Knowledge Fabric
 
 **Version:** 1.6

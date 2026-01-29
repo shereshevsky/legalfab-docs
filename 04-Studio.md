@@ -1,3 +1,8 @@
+---
+layout: default
+title: Studio
+---
+
 # LegalFab Studio
 
 **Version:** 1.5

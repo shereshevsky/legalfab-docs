@@ -1,3 +1,8 @@
+---
+layout: default
+title: API Security
+---
+
 # LegalFab API Security
 
 **Version:** 1.0
