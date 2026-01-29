@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚖️</text></svg>">
+    <link rel="icon" type="image/png" href="{{ '/logo/brandmark.png' | relative_url }}">
 </head>
 <body>
     <!-- Header -->
@@ -24,8 +24,7 @@
         <div class="header-inner">
             <div class="header-title">
                 <a href="{{ '/' | relative_url }}">
-                    <span class="logo">⚖️</span>
-                    <span class="title">{{ site.title }}</span>
+                    <img src="{{ '/logo/logo.svg' | relative_url }}" alt="LegalFab" class="logo">
                 </a>
             </div>
             <nav class="header-nav">
@@ -103,12 +102,8 @@
         }
 
         .header-title .logo {
-            font-size: 1.5rem;
-        }
-
-        .header-title .title {
-            font-size: 1rem;
-            font-weight: 400;
+            height: 2rem;
+            width: auto;
         }
 
         .header-nav {

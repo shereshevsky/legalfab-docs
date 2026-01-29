@@ -5,13 +5,13 @@ title: Home
 
 # LegalFab Platform Documentation
 
-Welcome to the LegalFab platform security and architecture documentation.
+Welcome to the LegalFab platform architecture documentation.
 
 ---
 
 ## Overview
 
-LegalFab is an AI-powered legal technology platform built on a metadata-driven architecture that provides unified access to distributed data assets while maintaining strict security controls. The platform enables natural language interaction across all components, supports configurable automation levels, and integrates with 200+ data sources including specialized corporate ownership and regulatory registers.
+LegalFab is an AI-powered legal technology platform built on a metadata-driven architecture that provides unified access to distributed data assets while maintaining strict security controls. The platform enables natural language interaction across all components, supports configurable automation levels, and integrates with 200+ data sources, including specialized corporate ownership and regulatory registers.
 
 ---
 
