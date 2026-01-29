@@ -570,16 +570,15 @@ LegalFab is available in multiple deployment configurations to meet varying secu
 
 ### Deployment Feature Comparison
 
-| Feature | SaaS | Dedicated | Customer Cloud | On-Premises |
-|:--------|:-----|:----------|:---------------|:------------|
-| Knowledge Fabric | ✓ | ✓ | ✓ | ✓ |
-| Studio (Agents, Widgets, Datasets) | ✓ | ✓ | ✓ | ✓ |
-| Dialog Interface | ✓ | ✓ | ✓ | ✓ |
-| Multi-Tenancy | ✓ | ✓ | ✓ | ✓ |
-| LLM Integration | ✓ | ✓ | ✓ | ✓ |
-| Custom Region | Limited | ✓ | ✓ | N/A |
-| Air-Gap Support | ✗ | ✗ | ✗ | ✓ |
-| Self-Hosted LLMs | ✗ | ✗ | ✓ | ✓ |
+| Feature                            | SaaS    | Dedicated | Customer Cloud | On-Premises |
+| :--------------------------------- | :------ | :-------- | :------------- | :---------- |
+| Knowledge Fabric                   | ✓       | ✓         | ✓              | ✓           |
+| Studio (Agents, Widgets, Datasets) | ✓       | ✓         | ✓              | ✓           |
+| Dialog Interface                   | ✓       | ✓         | ✓              | ✓           |
+| Multi-Tenancy                      | ✓       | ✓         | ✓              | ✓           |
+| LLM Integration                    | ✓       | ✓         | ✓              | ✓           |
+| Custom Region                      | Limited | ✓         | ✓              | N/A         |
+| Self-Hosted LLMs                   | ✗       | ✗         | ✓              | ✓           |
 
 ---
 
