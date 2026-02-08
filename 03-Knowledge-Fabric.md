@@ -21,7 +21,6 @@ The Knowledge Fabric serves as the foundational data integration and intelligenc
 | Knowledge Graph   | Graph-native storage with entity resolution  |
 | Entity Resolution | Cross-source entity matching and linking     |
 | Connectivity      | Direct DB/API connections, MCP connectors    |
-| Two-Way Data Flow | Read from and write back to source systems   |
 | Discovery Service | Automated identification and cataloging      |
 | Active Metadata   | Continuous metadata analysis and enrichment  |
 | External Sources  | OSINT and external data integration          |
