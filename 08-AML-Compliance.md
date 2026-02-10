@@ -545,3 +545,12 @@ Compliance cases track CDD, investigations, and regulatory actions.
 | Scheduled Reports | Automated reports require authorization |
 
 ---
+
+---
+## Related Notes
+
+- [[DataFab/AML/screening]] — Screening service API
+- [[DataFab/AML/Data Sources]] — AML data sources
+- [[DataFab/Screening]] — Screening overview
+- [[DataFab/Documentation/LegalFab/03-Knowledge-Fabric]] — Knowledge Fabric integration
+- [[DataFab/Documentation/UK Company Ownership Data Sources for Law Firm Conflict Management]] — UK ownership data

@@ -31,6 +31,9 @@ LegalFab is an AI-powered legal technology platform built on a metadata-driven a
 | [System Compliance](./10-System-Compliance.md) | Regulatory compliance, legal hold, retention | 1.2 |
 | [API Security](./11-API-Security.md) | API gateway, authentication, rate limiting | 1.0 |
 | [Dialog](./12-Dialog.md) | Conversational interface, NLU, context management | 1.0 |
+| [Operating Costs](./13-Operating-Costs.md) | Self-hosted deployment operating cost estimates | 1.0 |
+| [Trust & Compliance](./14-Trust-Compliance.md) | Managed deployment security, compliance, and governance | 1.0 |
+| [Competitive Analysis](./15-Competitive-Analysis.md) | Platform comparisons (vs. Microsoft Fabric, DeepJudge) | 1.0 |
 
 ---
 
@@ -84,3 +87,8 @@ For security inquiries or additional documentation, please contact the LegalFab 
 ---
 
 *Last Updated: January 2026*
+
+---
+## Related Notes
+
+- [[DataFab/Documentation/LegalFab/00-Table-of-Contents]] — Table of contents

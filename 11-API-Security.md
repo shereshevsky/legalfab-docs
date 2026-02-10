@@ -489,3 +489,9 @@ Real-time monitoring detects and responds to API security threats.
 | Injection Attempts | WAF signatures | Block, alert |
 | Token Theft | Unusual token usage | Revoke, alert |
 
+---
+## Related Notes
+
+- [[DataFab/Documentation/LegalFab/10-System-Compliance]] — System compliance
+- [[DataFab/Documentation/LegalFab/12-Dialog]] — Dialog system
+- [[DataFab/Documentation/RoboCorp/8. API & Integration Reference]] — RoboCorp API reference

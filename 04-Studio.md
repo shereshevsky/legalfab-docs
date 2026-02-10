@@ -980,3 +980,10 @@ High-risk operations require human approval before execution. These controls ope
 | Retention | Configurable per regulation |
 
 ---
+
+---
+## Related Notes
+
+- [[DataFab/Documentation/LegalFab/03-Knowledge-Fabric]] — Knowledge Fabric
+- [[DataFab/Documentation/LegalFab/05-AI-LLM]] — AI/LLM layer
+- [[DataFab/Documentation/RoboCorp/4. Studio Platform]] — RoboCorp Studio

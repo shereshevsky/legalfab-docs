@@ -583,3 +583,11 @@ LegalFab is available in multiple deployment configurations to meet varying secu
 ---
 
 *For detailed information see individual component documents: Knowledge Fabric, Studio, Dialog, AI-LLM, AML Compliance, and API Security.*
+
+---
+## Related Notes
+
+- [[DataFab/Documentation/LegalFab/01-Introduction]] — Introduction
+- [[DataFab/Documentation/LegalFab/03-Knowledge-Fabric]] — Knowledge Fabric
+- [[DataFab/Documentation/Legacy/2. Architecture]] — Legacy architecture
+- [[DataFab/Documentation/RoboCorp/2. System Architecture]] — RoboCorp architecture

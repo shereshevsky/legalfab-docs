@@ -586,3 +586,11 @@ The caching system optimizes response times through a two-layer architecture.
 | Access Requests | Handle data access requests | Request validation |
 
 ---
+
+---
+## Related Notes
+
+- [[DataFab/Documentation/LegalFab/05-AI-LLM]] — AI/LLM backend
+- [[DataFab/LLM Chat layer]] — Chat layer implementation
+- [[LLM/agents]] — Agent-based dialog
+- [[LLM/prompt engineering]] — Prompt design for dialog

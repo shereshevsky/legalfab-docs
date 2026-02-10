@@ -5,8 +5,8 @@ title: Table of Contents
 
 # LegalFab Documentation - Table of Contents
 
-**Version:** 1.5
-**Last Updated:** January 2026
+**Version:** 1.6
+**Last Updated:** February 2026
 
 ---
 
@@ -26,6 +26,9 @@ title: Table of Contents
 | [10-System-Compliance](./10-System-Compliance.md) | Regulatory compliance and governance | 1.2 |
 | [11-API-Security](./11-API-Security.md) | API gateway, authentication, rate limiting | 1.0 |
 | [12-Dialog](./12-Dialog.md) | Conversational interface and NLU | 1.0 |
+| [13-Operating-Costs](./13-Operating-Costs.md) | Self-hosted deployment operating costs | 1.0 |
+| [14-Trust-Compliance](./14-Trust-Compliance.md) | Trust & Compliance for managed deployments | 1.0 |
+| [15-Competitive-Analysis](./15-Competitive-Analysis.md) | Platform comparisons and differentiation | 1.0 |
 
 ---
 
@@ -165,6 +168,7 @@ title: Table of Contents
 - Regulatory Compliance Integration
 - MCP Connector Configuration
 - Source System Connectivity Patterns
+- MCP Integration Lifecycle Management
 
 ### Discovery Service
 - Discovery Components
@@ -723,6 +727,84 @@ title: Table of Contents
 
 ---
 
+## 13 - Operating Costs
+
+### Overview
+
+### LLM & AI Processing
+- Option A: Cloud LLM Providers (per-token)
+- Option B: Self-Hosted LLM (GPU infrastructure)
+
+### Compute Infrastructure
+
+### Storage & Retention
+
+### External Data Subscriptions
+
+### Monitoring & Observability
+
+### Summary
+- Monthly Operating Cost Ranges
+- Cost Optimization Levers
+
+---
+
+## 14 - Trust & Compliance
+
+### Overview
+
+### Shared Responsibility Model
+- Responsibility Matrix
+- Joint Responsibilities
+
+### Security Operations
+- Continuous Security Management
+- Patch Management SLAs
+- Incident Response
+- Incident Communication
+
+### Compliance Management
+- Continuous Compliance
+- Compliance Activities
+- Regulatory Change Management
+- Audit Support
+
+### Customer-Specific Controls
+- Identity Integration
+- Access Control Alignment
+- Data Protection Configuration
+- Integration Security
+
+### Governance & Transparency
+- Dedicated Support
+- Transparency Mechanisms
+- Change Management
+- Periodic Reviews
+- Reporting
+
+---
+
+## 15 - Competitive Analysis
+
+### Overview
+- LegalFab Key Differentiators
+
+### LegalFab vs. Microsoft Fabric
+- Executive Summary
+- What Microsoft Fabric Actually Is
+- LegalFab Knowledge Fabric Architecture
+- Fabric IQ: Microsoft's Semantic Layer
+- Head-to-Head Comparison
+- Where Each Platform Excels
+
+### LegalFab vs. DeepJudge
+- Comparison Matrix
+- Architectural Philosophy Comparison
+
+### Summary
+
+---
+
 ## Quick Reference
 
 ### Key Platform Components
@@ -754,6 +836,10 @@ title: Table of Contents
 | Legal Hold/Retention | 10-System-Compliance | Metadata-based retention, legal hold management |
 | API Gateway | 11-API-Security | Authentication, rate limiting, routing |
 | OAuth/Token Management | 11-API-Security | Token lifecycle, API keys, scopes |
+| MCP Lifecycle Management | 03-Knowledge-Fabric | API tracking, monitoring, remediation SLAs |
+| Operating Costs | 13-Operating-Costs | LLM, compute, storage, external data estimates |
+| Shared Responsibility | 14-Trust-Compliance | LegalFab vs. customer responsibilities |
+| Managed Security Ops | 14-Trust-Compliance | Patching SLAs, incident response, compliance |
 
 ### Security Controls by Category
 
@@ -763,10 +849,11 @@ title: Table of Contents
 | Encryption & Data Protection | 02, 03, 05, 10, 11 |
 | Audit Logging | 03, 04, 05, 08, 09, 10, 11 |
 | Network Security | 02, 07, 11 |
-| Incident Response | 07 |
-| Compliance & Governance | 08, 10 |
+| Incident Response | 07, 14 |
+| Compliance & Governance | 08, 10, 14 |
 | Schema & Data Quality | 04, 09 |
 | API Security | 11 |
+| Service Continuity | 03, 14 |
 
 ### Regulatory Coverage
 
@@ -780,3 +867,12 @@ title: Table of Contents
 | EU AI Act | 05-AI-LLM, 09-System-Compliance |
 
 ---
+
+---
+## Related Notes
+
+- [[DataFab/Documentation/LegalFab/01-Introduction]] — Introduction
+- [[DataFab/Documentation/LegalFab/03-Knowledge-Fabric]] — Knowledge Fabric
+- [[DataFab/Documentation/LegalFab/05-AI-LLM]] — AI/LLM Layer
+- [[DataFab/Documentation/LegalFab/08-AML-Compliance]] — AML Compliance
+- [[DataFab/Documentation/LegalFab/12-Dialog]] — Dialog System
