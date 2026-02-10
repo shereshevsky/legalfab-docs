@@ -867,12 +867,3 @@ title: Table of Contents
 | EU AI Act | 05-AI-LLM, 09-System-Compliance |
 
 ---
-
----
-## Related Notes
-
-- [[DataFab/Documentation/LegalFab/01-Introduction]] — Introduction
-- [[DataFab/Documentation/LegalFab/03-Knowledge-Fabric]] — Knowledge Fabric
-- [[DataFab/Documentation/LegalFab/05-AI-LLM]] — AI/LLM Layer
-- [[DataFab/Documentation/LegalFab/08-AML-Compliance]] — AML Compliance
-- [[DataFab/Documentation/LegalFab/12-Dialog]] — Dialog System

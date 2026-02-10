@@ -282,9 +282,3 @@ Policies trigger based on metadata tags without requiring changes to source syst
 
 ---
 
----
-## Related Notes
-
-- [[DataFab/Documentation/LegalFab/09-Schema-Management]] — Schema management
-- [[DataFab/Documentation/LegalFab/11-API-Security]] — API security
-- [[DataFab/Documentation/RoboCorp/11. Compliance & Governance]] — RoboCorp compliance

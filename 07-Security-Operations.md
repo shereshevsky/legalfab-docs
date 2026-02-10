@@ -186,10 +186,3 @@ The SOC provides centralized monitoring and management of security operations.
 
 ---
 
----
-## Related Notes
-
-- [[DataFab/Documentation/LegalFab/06-CI-CD]] — CI/CD pipeline
-- [[DataFab/Documentation/LegalFab/08-AML-Compliance]] — AML compliance
-- [[DataFab/Documentation/Legacy/6. Monitoring]] — Legacy monitoring
-- [[DataFab/Documentation/RoboCorp/10. Security Architecture]] — RoboCorp security

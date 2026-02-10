@@ -86,9 +86,3 @@ For security inquiries or additional documentation, please contact the LegalFab 
 
 ---
 
-*Last Updated: January 2026*
-
----
-## Related Notes
-
-- [[DataFab/Documentation/LegalFab/00-Table-of-Contents]] — Table of contents

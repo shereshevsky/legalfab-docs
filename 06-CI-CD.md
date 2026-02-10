@@ -208,11 +208,3 @@ Secret scanning prevents accidental exposure of sensitive information:
 | Evidence Collection | Automated compliance evidence generation |
 
 ---
-
----
-## Related Notes
-
-- [[DataFab/Documentation/LegalFab/05-AI-LLM]] — AI/LLM layer
-- [[DataFab/Documentation/LegalFab/07-Security-Operations]] — Security operations
-- [[DataFab/Documentation/Legacy/3. CI Process]] — Legacy CI process
-- [[DataFab/Documentation/RoboCorp/9. CI-CD Pipeline]] — RoboCorp CI/CD

@@ -161,10 +161,3 @@ The platform is designed to support compliance with:
 ## Contact
 
 For security inquiries or to request additional documentation, please contact the LegalFab security team through your account representative.
-
----
-## Related Notes
-
-- [[DataFab/Documentation/LegalFab/00-Table-of-Contents]] — Table of contents
-- [[DataFab/Documentation/LegalFab/02-Architecture]] — Architecture overview
-- [[DataFab/Documentation/Legacy/1. Introduction]] — Legacy introduction

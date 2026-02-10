@@ -1052,11 +1052,3 @@ The Monitoring system provides comprehensive observability across the Knowledge 
 
 ---
 
----
-## Related Notes
-
-- [[DataFab/Knowledge Fabric/DF architecture research]] — Architecture research
-- [[DataFab/KG/Knowledge Graph for Legal Case Analysis]] — Legal KG analysis
-- [[DataFab/KG/GraphDB]] — Graph database options
-- [[DataFab/Documentation/LegalFab/05-AI-LLM]] — AI/LLM integration
-- [[Medium/KG series/KG2/kg-article-2-entity-resolution]] — Entity resolution techniques

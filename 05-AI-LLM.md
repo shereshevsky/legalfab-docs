@@ -462,13 +462,4 @@ The Knowledge Fabric and agent infrastructure consume structured metadata output
 
 ---
 
----
-## Related Notes
 
-- [[DataFab/Documentation/LegalFab/03-Knowledge-Fabric]] — Knowledge Fabric data layer
-- [[DataFab/Documentation/LegalFab/12-Dialog]] — Dialog interface
-- [[DataFab/DS/Prediction RAG prompts]] — RAG prompts
-- [[DataFab/LLM Chat layer]] — Chat layer integration
-- [[LLM/RAG]] — RAG architecture
-- [[LLM/security]] — LLM security and guardrails
-- [[LLM/Fine-Tuning]] — Model fine-tuning

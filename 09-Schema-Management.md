@@ -458,9 +458,4 @@ All data processed through the platform is validated against its bound schema.
 
 ---
 
----
-## Related Notes
 
-- [[DataFab/Documentation/LegalFab/08-AML-Compliance]] — AML compliance
-- [[DataFab/Documentation/LegalFab/10-System-Compliance]] — System compliance
-- [[DataFab/KG/Knowledge Graph for Legal Case Analysis]] — Legal KG schema
