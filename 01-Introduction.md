@@ -106,7 +106,7 @@ The AI layer provides secure, provider-agnostic LLM integration with comprehensi
 | 07-Security-Operations | SOC, monitoring, and incident response                                              |
 | 08-AML-Compliance      | AML rule engine, BPM workflows, screening                                           |
 | 09-Schema-Management   | Business domain discovery, schema registry                                          |
-| 10-System-Compliance   | Regulatory compliance, legal hold, retention management                             |
+| 10-Compliance-Capabilities | Platform compliance features, legal hold, retention management                  |
 | 11-API-Security        | API gateway, authentication, rate limiting                                          |
 | 12-Dialog              | Conversational interface, NLU, state machine, context management                    |
 

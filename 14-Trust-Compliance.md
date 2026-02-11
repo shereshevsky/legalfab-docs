@@ -224,6 +224,6 @@ LegalFab's managed service operations ensure customer security, regulatory, and 
 - **Customer-Specific Controls**: SSO integration, configurable access controls, data residency options
 - **Transparent Governance**: Regular reviews, proactive communication, change notification
 
-For detailed technical security controls, see [07-Security-Operations](./07-Security-Operations.md) and [10-System-Compliance](./10-System-Compliance.md).
+For detailed technical security controls, see [07-Security-Operations](./07-Security-Operations.md) and [10-Compliance-Capabilities](./10-Compliance-Capabilities.md).
 
 ---

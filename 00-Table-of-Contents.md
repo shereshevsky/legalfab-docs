@@ -23,7 +23,7 @@ title: Table of Contents
 | [07-Security-Operations](./07-Security-Operations.md) | SOC, monitoring, and incident response | 1.0 |
 | [08-AML-Compliance](./08-AML-Compliance.md) | AML rule engine, BPM workflows, screening | 1.0 |
 | [09-Schema-Management](./09-Schema-Management.md) | Business domain discovery, schema registry | 1.0 |
-| [10-System-Compliance](./10-System-Compliance.md) | Regulatory compliance and governance | 1.2 |
+| [10-Compliance-Capabilities](./10-Compliance-Capabilities.md) | Platform compliance features | 1.3 |
 | [11-API-Security](./11-API-Security.md) | API gateway, authentication, rate limiting | 1.0 |
 | [12-Dialog](./12-Dialog.md) | Conversational interface and NLU | 1.0 |
 | [13-Operating-Costs](./13-Operating-Costs.md) | Self-hosted deployment operating costs | 1.0 |
@@ -504,7 +504,7 @@ title: Table of Contents
 
 ---
 
-## 09 - System Compliance
+## 10 - Compliance Capabilities
 
 ### Compliance Framework
 - Applicable Regulations (GDPR, CCPA, SOC 2, MLR 2017, FCA SYSC)
@@ -833,7 +833,7 @@ title: Table of Contents
 | Screening Service | 08-AML-Compliance | Sanctions, PEP, adverse media |
 | Schema Registry | 09-Schema-Management | Schema versioning, validation, binding |
 | Domain Discovery | 09-Schema-Management | Document-to-schema extraction |
-| Legal Hold/Retention | 10-System-Compliance | Metadata-based retention, legal hold management |
+| Legal Hold/Retention | 10-Compliance-Capabilities | Metadata-based retention, legal hold management |
 | API Gateway | 11-API-Security | Authentication, rate limiting, routing |
 | OAuth/Token Management | 11-API-Security | Token lifecycle, API keys, scopes |
 | MCP Lifecycle Management | 03-Knowledge-Fabric | API tracking, monitoring, remediation SLAs |
@@ -859,11 +859,11 @@ title: Table of Contents
 
 | Regulation | Primary Documents |
 |:-----------|:------------------|
-| GDPR | 09-System-Compliance |
-| CCPA/CPRA | 09-System-Compliance |
-| SOC 2 Type II | 09-System-Compliance |
-| MLR 2017 | 08-AML-Compliance, 09-System-Compliance |
-| FCA SYSC | 08-AML-Compliance, 09-System-Compliance |
-| EU AI Act | 05-AI-LLM, 09-System-Compliance |
+| GDPR | 10-Compliance-Capabilities |
+| CCPA/CPRA | 10-Compliance-Capabilities |
+| SOC 2 Type II | 10-Compliance-Capabilities |
+| MLR 2017 | 08-AML-Compliance, 10-Compliance-Capabilities |
+| FCA SYSC | 08-AML-Compliance, 10-Compliance-Capabilities |
+| EU AI Act | 05-AI-LLM, 10-Compliance-Capabilities |
 
 ---

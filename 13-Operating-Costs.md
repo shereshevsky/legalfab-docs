@@ -86,12 +86,9 @@ This document provides estimated ongoing operating costs for LegalFab platform d
 
 **Cost drivers:** Lookup volume, selected data providers
 
-| Service Type | Typical Cost |
-|:-------------|:-------------|
-| Companies House API | Free tier / £50-500/month |
-| Commercial ownership data (Bureau van Dijk, D&B) | $10K - $50K/year |
-| Sanctions/PEP screening | $0.05 - $0.50 per lookup |
-| Adverse media feeds | $5K - $20K/year |
+| Service Type        | Typical Cost    |
+| :------------------ | :-------------- |
+
 
 - Volume discounts apply
 - Customer provides existing subscriptions where available
