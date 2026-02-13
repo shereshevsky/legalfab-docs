@@ -5,31 +5,32 @@ title: Table of Contents
 
 # LegalFab Documentation - Table of Contents
 
-**Version:** 1.6
+**Version:** 1.7
 **Last Updated:** February 2026
 
 ---
 
 ## Document Overview
 
-| Document | Description | Version |
-|:---------|:------------|:--------|
-| [01-Introduction](./01-Introduction.md) | Platform overview and security summary | 1.2 |
-| [02-Architecture](./02-Architecture.md) | System architecture and components | 1.4 |
-| [03-Knowledge-Fabric](./03-Knowledge-Fabric.md) | Data integration and knowledge graph | 1.6 |
-| [04-Studio](./04-Studio.md) | Agent creation and workflow design | 1.5 |
-| [05-AI-LLM](./05-AI-LLM.md) | AI and LLM security architecture | 1.1 |
-| [06-CI-CD](./06-CI-CD.md) | CI/CD pipeline security | 1.0 |
-| [07-Security-Operations](./07-Security-Operations.md) | SOC, monitoring, and incident response | 1.0 |
-| [08-AML-Compliance](./08-AML-Compliance.md) | AML rule engine, BPM workflows, screening | 1.0 |
-| [09-Schema-Management](./09-Schema-Management.md) | Business domain discovery, schema registry | 1.0 |
-| [10-Compliance-Capabilities](./10-Compliance-Capabilities.md) | Platform compliance features | 1.3 |
-| [11-API-Security](./11-API-Security.md) | API gateway, authentication, rate limiting | 1.0 |
-| [12-Dialog](./12-Dialog.md) | Conversational interface and NLU | 1.0 |
-| [13-Operating-Costs](./13-Operating-Costs.md) | Self-hosted deployment operating costs | 1.0 |
-| [14-Trust-Compliance](./14-Trust-Compliance.md) | Trust & Compliance for managed deployments | 1.0 |
-| [15-Competitive-Analysis](./15-Competitive-Analysis.md) | Platform comparisons and differentiation | 1.0 |
-| [16-Resources](./16-Resources.md) | Technical articles and thought leadership | 1.0 |
+| Document                                                                  | Description                                  | Version |
+| :------------------------------------------------------------------------ | :------------------------------------------- | :------ |
+| [01-Introduction](./01-Introduction.md)                                   | Platform overview and security summary       | 1.2     |
+| [02-Architecture](./02-Architecture.md)                                   | System architecture and components           | 1.4     |
+| [03-Knowledge-Fabric](./03-Knowledge-Fabric.md)                           | Data integration and knowledge graph         | 1.6     |
+| [04-Studio](./04-Studio.md)                                               | Agent creation and workflow design           | 1.5     |
+| [05-AI-LLM](./05-AI-LLM.md)                                               | AI and LLM security architecture             | 1.1     |
+| [06-CI-CD](./06-CI-CD.md)                                                 | CI/CD pipeline security                      | 1.0     |
+| [07-Security-Operations](./07-Security-Operations.md)                     | SOC, monitoring, and incident response       | 1.0     |
+| [08-AML-Compliance](./08-AML-Compliance.md)                               | AML rule engine, BPM workflows, screening    | 1.0     |
+| [09-Schema-Management](./09-Schema-Management.md)                         | Business domain discovery, schema registry   | 1.0     |
+| [10-Compliance-Capabilities](./10-Compliance-Capabilities.md)             | Platform compliance features                 | 1.3     |
+| [11-API-Security](./11-API-Security.md)                                   | API gateway, authentication, rate limiting   | 1.0     |
+| [12-Dialog](./12-Dialog.md)                                               | Conversational interface and NLU             | 1.0     |
+| [13-Operating-Costs](./13-Operating-Costs.md)                             | Self-hosted deployment operating costs       | 1.0     |
+| [14-Trust-Compliance](./14-Trust-Compliance.md)                           | Trust & Compliance for managed deployments   | 1.0     |
+| [15-Competitive-Analysis](./15-Competitive-Analysis.md)                   | Platform comparisons and differentiation     | 1.0     |
+| [16-Resources](./16-Resources.md)                                         | Technical articles and thought leadership    | 1.0     |
+
 
 ---
 
@@ -832,37 +833,38 @@ title: Table of Contents
 
 ### Key Platform Components
 
-| Component | Primary Document | Key Features |
-|:----------|:-----------------|:-------------|
-| Knowledge Graph | 03-Knowledge-Fabric | Entity storage, relationship mapping, traversal queries |
-| Entity Resolution | 03-Knowledge-Fabric | Blocking, matching, clustering, golden records |
-| Two-Way Data Flow | 03-Knowledge-Fabric | Read/write to source systems, metadata-only storage |
-| Persistent Knowledge Graph | 03-Knowledge-Fabric | Corporate memory, schema-bounded extraction, provenance |
-| Search Sessions | 03-Knowledge-Fabric | Iterative exploration, session graphs, accumulated context |
-| Data Observability | 03-Knowledge-Fabric | Quality monitoring, freshness, alerts |
-| Text-to-Pipeline | 04-Studio | Natural language workflow generation, DSL output |
-| Agents | 04-Studio | AI agents with domain-driven creation flow |
-| Widgets | 04-Studio | Agents with visual interface components |
-| Datasets | 04-Studio | Structured data collections for agents |
-| Chain of Agents | 04-Studio | Multi-agent orchestration patterns |
-| Operational Modes | 04-Studio | Five modes from manual to fully automated |
-| LightLLM Gateway | 05-AI-LLM | Provider-agnostic LLM interface |
-| LLM Monitoring | 05-AI-LLM | Output consistency, A/B testing, provenance |
-| Dialog Interface | 12-Dialog | Conversational NLU, state machine, context management |
-| Function Router | 12-Dialog | Multi-component query routing and orchestration |
-| Intelligent Caching | 12-Dialog | Exact match and semantic caching layers |
-| Rule Engine | 08-AML-Compliance | Risk scoring, compliance rules |
-| BPM Workflows | 08-AML-Compliance | CDD, EDD, investigation processes |
-| Screening Service | 08-AML-Compliance | Sanctions, PEP, adverse media |
-| Schema Registry | 09-Schema-Management | Schema versioning, validation, binding |
-| Domain Discovery | 09-Schema-Management | Document-to-schema extraction |
-| Legal Hold/Retention | 10-Compliance-Capabilities | Metadata-based retention, legal hold management |
-| API Gateway | 11-API-Security | Authentication, rate limiting, routing |
-| OAuth/Token Management | 11-API-Security | Token lifecycle, API keys, scopes |
-| MCP Lifecycle Management | 03-Knowledge-Fabric | API tracking, monitoring, remediation SLAs |
-| Operating Costs | 13-Operating-Costs | LLM, compute, storage, external data estimates |
-| Shared Responsibility | 14-Trust-Compliance | LegalFab vs. customer responsibilities |
-| Managed Security Ops | 14-Trust-Compliance | Patching SLAs, incident response, compliance |
+| Component                  | Primary Document                 | Key Features                                               |
+| :------------------------- | :------------------------------- | :--------------------------------------------------------- |
+| Knowledge Graph            | 03-Knowledge-Fabric              | Entity storage, relationship mapping, traversal queries    |
+| Entity Resolution          | 03-Knowledge-Fabric              | Blocking, matching, clustering, golden records             |
+| Two-Way Data Flow          | 03-Knowledge-Fabric              | Read/write to source systems, metadata-only storage        |
+| Persistent Knowledge Graph | 03-Knowledge-Fabric              | Corporate memory, schema-bounded extraction, provenance    |
+| Search Sessions            | 03-Knowledge-Fabric              | Iterative exploration, session graphs, accumulated context |
+| Data Observability         | 03-Knowledge-Fabric              | Quality monitoring, freshness, alerts                      |
+| Text-to-Pipeline           | 04-Studio                        | Natural language workflow generation, DSL output           |
+| Agents                     | 04-Studio                        | AI agents with domain-driven creation flow                 |
+| Widgets                    | 04-Studio                        | Agents with visual interface components                    |
+| Datasets                   | 04-Studio                        | Structured data collections for agents                     |
+| Chain of Agents            | 04-Studio                        | Multi-agent orchestration patterns                         |
+| Operational Modes          | 04-Studio                        | Five modes from manual to fully automated                  |
+| LightLLM Gateway           | 05-AI-LLM                        | Provider-agnostic LLM interface                            |
+| LLM Monitoring             | 05-AI-LLM                        | Output consistency, A/B testing, provenance                |
+| Dialog Interface           | 12-Dialog                        | Conversational NLU, state machine, context management      |
+| Function Router            | 12-Dialog                        | Multi-component query routing and orchestration            |
+| Intelligent Caching        | 12-Dialog                        | Exact match and semantic caching layers                    |
+| Rule Engine                | 08-AML-Compliance                | Risk scoring, compliance rules                             |
+| BPM Workflows              | 08-AML-Compliance                | CDD, EDD, investigation processes                          |
+| Screening Service          | 08-AML-Compliance                | Sanctions, PEP, adverse media                              |
+| Schema Registry            | 09-Schema-Management             | Schema versioning, validation, binding                     |
+| Domain Discovery           | 09-Schema-Management             | Document-to-schema extraction                              |
+| Legal Hold/Retention       | 10-Compliance-Capabilities       | Metadata-based retention, legal hold management            |
+| API Gateway                | 11-API-Security                  | Authentication, rate limiting, routing                     |
+| OAuth/Token Management     | 11-API-Security                  | Token lifecycle, API keys, scopes                          |
+| MCP Lifecycle Management   | 03-Knowledge-Fabric              | API tracking, monitoring, remediation SLAs                 |
+| Operating Costs            | 13-Operating-Costs               | LLM, compute, storage, external data estimates             |
+| Shared Responsibility      | 14-Trust-Compliance              | LegalFab vs. customer responsibilities                     |
+| Managed Security Ops       | 14-Trust-Compliance              | Patching SLAs, incident response, compliance               |
+
 
 ### Security Controls by Category
 

@@ -84,19 +84,11 @@ This section provides links to technical articles and thought leadership coverin
 
 ## Case Studies
 
-| Article | Description |
-|:--------|:------------|
+| Article                                                                                                                                  | Description                                                |
+| :--------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------- |
 | [Processing £8 Billion in 90 Days: Scaling Graph-Based Architecture for UK Motor Finance Remediation](https://medium.com/p/ffb6f3ac664f) | Large-scale financial remediation using graph architecture |
-| [How We're Using Graph Theory to Transform Car Finance Remediation](https://medium.com/p/b21d4f43df63) | Applied graph algorithms in regulatory compliance |
-| [Visualizing the Soul of Dune: A Temporal Knowledge Graph Journey](https://medium.com/p/871226652187) | Temporal graph construction and visualization techniques |
-| [From Raw Clicks to Marketing Gold: How Knowledge Graphs Turn Your Behavior Into a Valuable Profile](https://medium.com/p/50aa0f5e76e7) | Behavioral graph construction for customer intelligence |
+| [How We're Using Graph Theory to Transform Car Finance Remediation](https://medium.com/p/b21d4f43df63)                                   | Applied graph algorithms in regulatory compliance          |
+| [From Raw Clicks to Marketing Gold: How Knowledge Graphs Turn Your Behavior Into a Valuable Profile](https://medium.com/p/50aa0f5e76e7)  | Behavioral graph construction for customer intelligence    |
 
----
-
-## Thought Leadership
-
-| Article | Description |
-|:--------|:------------|
-| [The Wisdom Economy: Why Your Expertise Is the New Oil — And How to Actually Own It](https://medium.com/p/d524f14b00fc) | The value of encoded domain knowledge in the AI era |
 
 ---

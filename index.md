@@ -17,24 +17,25 @@ LegalFab is an AI-powered legal technology platform built on a metadata-driven a
 
 ## Documentation
 
-| Document | Description | Version |
-|:---------|:------------|:-------:|
-| [Introduction](./01-Introduction.md) | Platform overview, capabilities, and security summary | 1.2 |
-| [Architecture](./02-Architecture.md) | System architecture, deployment models, security boundaries | 1.4 |
-| [Knowledge Fabric](./03-Knowledge-Fabric.md) | Knowledge graph, entity resolution, MCP connectors, corporate ownership | 1.6 |
-| [Studio](./04-Studio.md) | Agent creation, widgets, datasets, operational modes | 1.5 |
-| [AI & LLM](./05-AI-LLM.md) | LLM security, output consistency, model provenance | 1.1 |
-| [CI/CD](./06-CI-CD.md) | CI/CD pipeline security | 1.0 |
-| [Security Operations](./07-Security-Operations.md) | SOC, monitoring, incident response | 1.0 |
-| [AML Compliance](./08-AML-Compliance.md) | AML rule engine, BPM workflows, screening | 1.0 |
-| [Schema Management](./09-Schema-Management.md) | Business domain discovery, schema registry | 1.0 |
-| [Compliance Capabilities](./10-Compliance-Capabilities.md) | Platform compliance features, legal hold, retention | 1.3 |
-| [API Security](./11-API-Security.md) | API gateway, authentication, rate limiting | 1.0 |
-| [Dialog](./12-Dialog.md) | Conversational interface, NLU, context management | 1.0 |
-| [Operating Costs](./13-Operating-Costs.md) | Self-hosted deployment operating cost estimates | 1.0 |
-| [Trust & Compliance](./14-Trust-Compliance.md) | Managed deployment security, compliance, and governance | 1.0 |
-| [Competitive Analysis](./15-Competitive-Analysis.md) | Platform comparisons (vs. Microsoft Fabric, DeepJudge) | 1.0 |
-| [Resources](./16-Resources.md) | Technical articles on knowledge graphs, ontologies, and agents | 1.0 |
+| Document                                                    | Description                                                             | Version |
+| :---------------------------------------------------------- | :---------------------------------------------------------------------- | :-----: |
+| [Introduction](./01-Introduction.md)                        | Platform overview, capabilities, and security summary                   |   1.2   |
+| [Architecture](./02-Architecture.md)                        | System architecture, deployment models, security boundaries             |   1.4   |
+| [Knowledge Fabric](./03-Knowledge-Fabric.md)                | Knowledge graph, entity resolution, MCP connectors, corporate ownership |   1.6   |
+| [Studio](./04-Studio.md)                                    | Agent creation, widgets, datasets, operational modes                    |   1.5   |
+| [AI & LLM](./05-AI-LLM.md)                                  | LLM security, output consistency, model provenance                      |   1.1   |
+| [CI/CD](./06-CI-CD.md)                                      | CI/CD pipeline security                                                 |   1.0   |
+| [Security Operations](./07-Security-Operations.md)          | SOC, monitoring, incident response                                      |   1.0   |
+| [AML Compliance](./08-AML-Compliance.md)                    | AML rule engine, BPM workflows, screening                               |   1.0   |
+| [Schema Management](./09-Schema-Management.md)              | Business domain discovery, schema registry                              |   1.0   |
+| [Compliance Capabilities](./10-Compliance-Capabilities.md)  | Platform compliance features, legal hold, retention                     |   1.3   |
+| [API Security](./11-API-Security.md)                        | API gateway, authentication, rate limiting                              |   1.0   |
+| [Dialog](./12-Dialog.md)                                    | Conversational interface, NLU, context management                       |   1.0   |
+| [Operating Costs](./13-Operating-Costs.md)                  | Self-hosted deployment operating cost estimates                         |   1.0   |
+| [Trust & Compliance](./14-Trust-Compliance.md)              | Managed deployment security, compliance, and governance                 |   1.0   |
+| [Competitive Analysis](./15-Competitive-Analysis.md)        | Platform comparisons (vs. Microsoft Fabric, DeepJudge)                  |   1.0   |
+| [Resources](./16-Resources.md)                              | Technical articles on knowledge graphs, ontologies, and agents          |   1.0   |
+
 
 ---
 
