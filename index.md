@@ -34,6 +34,7 @@ LegalFab is an AI-powered legal technology platform built on a metadata-driven a
 | [Operating Costs](./13-Operating-Costs.md) | Self-hosted deployment operating cost estimates | 1.0 |
 | [Trust & Compliance](./14-Trust-Compliance.md) | Managed deployment security, compliance, and governance | 1.0 |
 | [Competitive Analysis](./15-Competitive-Analysis.md) | Platform comparisons (vs. Microsoft Fabric, DeepJudge) | 1.0 |
+| [Resources](./16-Resources.md) | Technical articles on knowledge graphs, ontologies, and agents | 1.0 |
 
 ---
 

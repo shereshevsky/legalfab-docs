@@ -29,6 +29,7 @@ title: Table of Contents
 | [13-Operating-Costs](./13-Operating-Costs.md) | Self-hosted deployment operating costs | 1.0 |
 | [14-Trust-Compliance](./14-Trust-Compliance.md) | Trust & Compliance for managed deployments | 1.0 |
 | [15-Competitive-Analysis](./15-Competitive-Analysis.md) | Platform comparisons and differentiation | 1.0 |
+| [16-Resources](./16-Resources.md) | Technical articles and thought leadership | 1.0 |
 
 ---
 
@@ -802,6 +803,28 @@ title: Table of Contents
 - Architectural Philosophy Comparison
 
 ### Summary
+
+---
+
+## 16 - Resources
+
+### Overview
+
+### Knowledge Graph Architecture
+
+### Ontology & Schema Design
+
+### Knowledge Graph Extraction
+
+### Entity Resolution & Community Detection
+
+### Graph RAG & Retrieval
+
+### Agent Orchestration
+
+### Case Studies
+
+### Thought Leadership
 
 ---
 
