@@ -1,12 +1,8 @@
----
-layout: default
-title: Competitive Analysis
----
 
 # LegalFab Competitive Analysis
 
-**Version:** 1.0
-**Last Updated:** February 2026
+**Version:** 3.0
+**Last Updated:** March 2026
 
 ---
 
@@ -102,6 +98,84 @@ Fabric IQ is a semantic intelligence layer with two components: an **Ontology** 
 
 ---
 
+## LegalFab vs. Intapp Open
+
+### Executive Summary
+
+LegalFab and Intapp Open both address client and matter onboarding, conflicts, and compliance — but they come from fundamentally different architectural eras. Intapp Open is the direct evolution of The Frayman Group's Compliguard suite (acquired 2014), built on a **workflow-centric, relational data model** with AI capabilities bolted on over time. LegalFab is an **AI-native platform** built from the ground up around a graph-based Knowledge Fabric, agentic automation, and continuous intelligence. The comparison is not feature-by-feature — it is generational.
+
+> **Key Distinction:** Intapp Open centralises data into a separate index and executes rules through a monolithic workflow engine. LegalFab keeps data in source systems, resolves entities through graph operations, and orchestrates compliance through composable agentic workflows.
+
+### What Intapp Open Actually Is
+
+Intapp Open is a workflow and conflicts management platform for law firms, anchored by the Intapp Integration Builder. Its core architecture — structured data model, centralised pipelines, point-to-point connectors — traces back to The Frayman Group's Compliguard suite. Since acquisition, Intapp has added ethical walls, risk scoring, AML/KYC orchestration, AI-assisted conflicts relevance, and Azure cloud hosting. However, the foundational workflow engine and relational data model remain unchanged. AI capabilities function as an enhancement layer, not as the architectural foundation.
+
+### Head-to-Head Comparison
+
+| Dimension | LegalFab Knowledge Fabric | Intapp Open |
+|:----------|:--------------------------|:------------|
+| **Architecture Pattern** | AI-native Knowledge Fabric — graph-based, data stays in place | Workflow-centric — relational data model, centralised index |
+| **Data Location** | Remains in source systems; only metadata/mappings stored centrally | Extracted into separate Intapp index via ETL pipelines |
+| **Knowledge Graph** | Persistent graph with entity resolution, relationship modelling, provenance | No native graph; relational schema with bolt-on corporate tree modules |
+| **Entity Resolution** | Graph-native: attribute comparison + structural analysis + similarity edges; continuous | Text-based: name normalisation, fuzzy matching; batch processing |
+| **False Positive Rate** | Low — structural context (graph neighbourhood) eliminates ambiguous matches | High — keyword/name matching returns broad results requiring manual review |
+| **OSINT Integration** | Native: autonomous, schema-driven collection from open sources across jurisdictions | Pre-configured integrations with specific commercial providers (BvD, World-Check) |
+| **Perpetual KYC (pKYC)** | ✅ Continuous OSINT re-collection, change detection, automatic BPM triggers | ❌ Periodic reviews; changes detected only on manual re-check or scheduled cycle |
+| **Perpetual AML/Conflicts** | ✅ Event-driven; every data change triggers re-evaluation across graph | ❌ Point-in-time at intake; ongoing monitoring requires external configuration |
+| **Rules Engine** | Multi-paradigm: schema matching, natural language, text-to-graph, GTA (DAG agents) | Single paradigm: form-based conditional logic; complex rules require custom scripting |
+| **Risk Configuration** | Dynamic, rule-type-agnostic; continuous re-assessment as data changes | Tightly coupled to workflow engine; static risk scoring at intake |
+| **Screening** | FCA-compliant; 70+ matching algorithms; real-time + batch + delta-delta; adverse media via GenAI NLP | Standard sanctions/PEP screening via third-party provider integrations |
+| **AI Layer** | Foundational — agentic workflows, compound AI orchestration, provider-agnostic LLM | Bolt-on — AI-assisted conflicts relevance ranking; not architecturally integrated |
+| **Integration Model** | MCP-first; 200+ connectors; federated queries | Point-to-point connectors; fragile during upgrades; manual data mapping |
+| **Data Duplication** | Eliminated by design — single source of truth in source systems | Required — separate index, ETL pipelines, ongoing data cleansing |
+| **Implementation Time** | Days (ontology-based, no upfront schema definition) | Months (specialist configuration, data migration, custom integrations) |
+| **Deployment Options** | Public cloud, private cloud, managed service, hybrid/phased | Azure-hosted; monolithic architecture limits cloud-native flexibility |
+| **Corporate Hierarchies** | Native to graph model — ownership is a relationship type | Bolt-on module — requires separate licence and configuration |
+| **Multi-Tenant / Mergers** | ✅ VPC-per-tenant, cross-firm entity resolution, authorised federation | Limited — separate deployments, no native cross-firm resolution |
+
+### Architectural Philosophy Comparison
+
+| Feature | Intapp Open (Workflow-Centric) | LegalFab (AI-Native Graph) | Why LegalFab Wins |
+|:--------|:-------------------------------|:---------------------------|:------------------|
+| **Data Philosophy** | Centralise & Index — data extracted into Intapp's own repository | Federate & Analyse in Place — data stays in source systems | No data duplication, no ETL pipelines, always current |
+| **Entity Resolution** | Text-Based Matching — name normalisation, fuzzy strings, batch runs | Graph-Native Unification — attributes + structural position + continuous resolution | Low false positives, near-zero false negatives |
+| **Compliance Model** | Point-in-Time — checks at intake, periodic scheduled reviews | Perpetual & Event-Driven — every data change triggers re-evaluation | Always-current risk posture, not stale snapshots |
+| **Rules & Risk** | Single Paradigm — form-configured conditions, coupled to workflow engine | Multi-Paradigm — schema, NL, text-to-graph, GTA agents; rule-agnostic risk scoring | Compliance teams define rules in natural language; complex scenarios compose as DAGs |
+| **External Intelligence** | Provider-Dependent — pre-configured integrations with commercial databases | Autonomous OSINT — schema-driven, traverses open sources as deep as needed | Eliminates single-provider dependency; richer, more current entity intelligence |
+| **Deployment** | Monolithic on Azure — long cycles, specialist configuration, expensive upgrades | Cloud-native — public/private cloud, managed service, phased adoption | Days to deploy vs. months; lower TCO; data sovereignty flexibility |
+
+### Where Each Platform Excels
+
+**LegalFab Advantages:**
+
+- **Graph-native entity resolution:** Combines attribute matching with structural graph analysis — dramatically reduces false positives while catching matches text-based systems miss
+- **Autonomous OSINT & pKYC:** Schema-driven intelligence collection from open sources with continuous change detection and BPM triggers — no dependence on single commercial provider
+- **Multi-paradigm rules engine:** Schema matching, natural language rules, text-to-graph extraction, and Game-Tree Agent DAG orchestration — compliance teams can define rules at any complexity level
+- **Perpetual compliance:** AML, conflicts, and KYC assessments run continuously and event-driven, not point-in-time
+- **Deployment flexibility:** Cloud, managed service, hybrid/phased — deployed in days, not months
+
+**Intapp Open Advantages:**
+
+- **Market incumbency:** Dominant installed base in large law firms; established vendor relationships and switching costs
+- **Workflow maturity:** Decades of refinement in legal intake workflow orchestration; extensive best-practice templates
+- **Ecosystem breadth:** Integration with broader Intapp suite (Walls, DealCloud, Time) and Microsoft 365 ecosystem
+- **Compliance track record:** Long regulatory history provides comfort to risk-averse decision-makers
+
+### The Fundamental Difference
+
+| LegalFab Approach | Intapp Open Approach |
+|:------------------|:---------------------|
+| Data stays in source systems | Data copied into centralised Intapp index |
+| Graph-native entity resolution (attributes + structure) | Text-based name matching (batch) |
+| Perpetual, event-driven compliance | Point-in-time checks at intake |
+| Multi-paradigm rules (schema, NL, text-to-graph, GTA) | Single-paradigm form-based conditions |
+| Autonomous OSINT with pKYC change detection | Pre-configured commercial provider integrations |
+| Deployed in days; cloud/managed/hybrid options | Deployed in months; Azure-hosted monolith |
+
+> **Intapp Open reflects the best thinking of an earlier era — workflow automation over structured data with point-in-time compliance. LegalFab is built for how risk actually manifests: through evolving relationships, incomplete information, and continuous change.**
+
+---
+
 ## LegalFab vs. DeepJudge
 
 ### Comparison Matrix
@@ -165,10 +239,11 @@ Fabric IQ is a semantic intelligence layer with two components: an **Ontology** 
 
 ## Summary
 
-| Platform | Architecture | Entity Resolution | OSINT | Deployment Options |
-|:---------|:-------------|:------------------|:------|:-------------------|
-| **LegalFab** | True data fabric — data in place | ✅ Built-in, cross-source | ✅ Native integration | Full range including on-prem |
-| **Microsoft Fabric** | Data lakehouse — centralized OneLake | ❌ Requires third-party | ❌ None | SaaS only (Azure) |
-| **DeepJudge** | Centralized search index | Basic (document-level) | ❌ None | Not detailed |
+| Platform | Architecture | Entity Resolution | OSINT | pKYC | Rules Engine | Perpetual AML/Conflicts | Deployment Options |
+|:---------|:-------------|:------------------|:------|:-----|:-------------|:------------------------|:-------------------|
+| **LegalFab** | True data fabric — data in place | ✅ Graph-native (attributes + structure); continuous | ✅ Autonomous, schema-driven | ✅ Change detection + BPM triggers | Multi-paradigm (schema, NL, text-to-graph, GTA) | ✅ Event-driven, continuous | Cloud, managed service, hybrid, on-prem |
+| **Intapp Open** | Workflow-centric — centralised index | Basic (text-based, batch) | ❌ Pre-configured providers only | ❌ Periodic manual reviews | Single paradigm (form-based conditions) | ❌ Point-in-time at intake | Azure-hosted monolith |
+| **Microsoft Fabric** | Data lakehouse — centralised OneLake | ❌ Requires third-party | ❌ None | ❌ None | N/A (general-purpose analytics) | N/A | SaaS only (Azure) |
+| **DeepJudge** | Centralised search index | Basic (document-level) | ❌ None | ❌ None | Workflow builder (single paradigm) | ❌ Not detailed | Not detailed |
 
 ---
